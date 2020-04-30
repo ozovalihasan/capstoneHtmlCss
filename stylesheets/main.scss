@@ -1,8 +1,10 @@
 $first-color: #272a21;
-$second-color: #ec5242;
+$second-color: rgb(236, 82, 66);
 $third-color: #d3d3d3;
-$font-1: "Lato", sans-serif;
-$font-2: "COCOGOOSE", sans-serif;
+$font-1: "Lato",
+sans-serif;
+$font-2: "COCOGOOSE",
+sans-serif;
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
@@ -27,8 +29,7 @@ $font-2: "COCOGOOSE", sans-serif;
   src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,8 +47,9 @@ a {
 
 .main-padding {
   padding: 0 40px;
+
   @media (min-width: 768px) {
-    padding: 0 50px;
+    padding: 0 10%;
   }
 }
 
@@ -98,12 +100,26 @@ nav {
 }
 
 main {
-  background-image: url("../images/contact-improvisation-3684689_1920.jpg");
-  background-position: center -300px;
+  &:after {
 
-  background-size: 100%;
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 
-  background-repeat: no-repeat;
+    background-image:  url("../images/background-1.svg") ;
+    background-position: center 0 ;
+
+
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+  }
+
 
   .fa-bars {
     font-size: 200%;
@@ -119,15 +135,23 @@ main {
     }
 
     h2 {
+      
       background-image: url("../images/29942-gettyimages-155302141.jpg");
       color: transparent;
       @include bg-clip(text);
       @include fz(60px);
       font-weight: bold;
       text-transform: uppercase;
+      width: auto; 
+      @media (min-width: 768px) {
+      width: 75%;           
+      }
     }
 
     h3 {
+      background-color:#fff;
+    
+      width: 75%;
       line-height: 2;
       @include fz(16px);
     }
@@ -161,9 +185,11 @@ main {
         margin: 0;
         padding: 0;
       }
+
       div {
         width: auto;
         margin: auto 0;
+
         @media (min-width: 768px) {
           width: 100%;
           margin: 10px 0;
@@ -265,12 +291,14 @@ main {
       }
     }
   }
+
   .sponsors {
     padding-top: 20px;
     padding-bottom: 20px;
 
     background-color: #414246;
     color: $third-color;
+
     h1 {
       @include fz(22px);
 
@@ -282,6 +310,7 @@ main {
     a {
       @include fz(26px);
       margin: 0 10px;
+
       i {
         @include fz(36px);
       }
@@ -292,6 +321,7 @@ main {
 .footer {
   padding-bottom: 50px;
   padding-top: 50px;
+
   img {
     height: 60px;
     width: 60px;

@@ -18,7 +18,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .main-padding {
-    padding: 0 50px;
+    padding: 0 10%;
   }
 }
 
@@ -59,9 +59,17 @@ nav .bottom-nav button {
   margin-right: 0;
 }
 
-main {
-  background-image: url("../images/contact-improvisation-3684689_1920.jpg");
-  background-position: center -300px;
+main:after {
+  content: "";
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../images/background-1.svg");
+  background-position: center 0;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -85,8 +93,16 @@ main .main-top h2 {
   font-size: 3.75em;
   font-weight: bold;
   text-transform: uppercase;
+  width: auto;
+}
+@media (min-width: 768px) {
+  main .main-top h2 {
+    width: 75%;
+  }
 }
 main .main-top h3 {
+  background-color: #fff;
+  width: 75%;
   line-height: 2;
   font-size: 1em;
 }
