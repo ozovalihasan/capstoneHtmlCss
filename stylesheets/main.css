@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.main-padding {
+  padding: 0 40px;
+}
+@media (min-width: 768px) {
+  .main-padding {
+    padding: 0 50px;
+  }
+}
+
+body {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    width: 75%;
+  }
+}
+
+nav {
+  height: auto;
+}
+nav .top-nav {
+  background-color: #272a21;
+  color: #d3d3d3;
+}
+nav .top-nav i {
+  margin: 5px 10px;
+}
+nav .top-nav ul li {
+  margin: 0 10px;
+}
+nav .bottom-nav img {
+  height: 50px;
+  width: 50px;
+}
+nav .bottom-nav li {
+  margin-right: 5vw;
+}
+nav .bottom-nav button {
+  color: #ec5242;
+  border: 4px solid #ec5242;
+  margin: 10px;
+  padding: 3px 10px;
+  margin-right: 0;
+}
+
+main {
+  background-image: url("../images/contact-improvisation-3684689_1920.jpg");
+  background-position: center -300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+main .fa-bars {
+  font-size: 200%;
+}
+main .main-top {
+  color: #878787;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main .main-top h1 {
+  color: #ec5242;
+}
+main .main-top h2 {
+  background-image: url("../images/29942-gettyimages-155302141.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-size: 3.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .main-top h3 {
+  line-height: 2;
+  font-size: 1em;
+}
+main .main-top h4 {
+  font-weight: bold;
+  font-size: 1.875em;
+  text-transform: uppercase;
+}
+main .main-middle {
+  background-image: url("../images/two-rect.svg");
+  background-size: 40px;
+  background-repeat: repeat;
+  color: #d3d3d3;
+}
+main .main-middle .title-main-middle {
+  font-weight: 600;
+  color: #cccccc;
+}
+main .main-middle .title-main-middle:after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  border: solid 1px #ec5242;
+}
+main .main-middle section {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 768px) {
+  main .main-middle section {
+    margin: 0;
+    padding: 0;
+  }
+}
+main .main-middle section div {
+  width: auto;
+  margin: auto 0;
+}
+@media (min-width: 768px) {
+  main .main-middle section div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+main .main-middle section a {
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #ec5242;
+}
+main .main-middle section a:hover {
+  color: #e42a17;
+}
+main .main-middle section p {
+  color: #d3d3d3;
+}
+main .main-middle button {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  font-size: 1.625em;
+}
+main .main-bottom {
+  height: auto;
+  margin-bottom: 10px;
+}
+main .main-bottom .title-main-bottom:after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  border: solid 1px #ec5242;
+}
+main .main-bottom section {
+  height: auto;
+  font-size: 0.875em;
+}
+main .main-bottom section .images-bottom {
+  height: auto;
+}
+main .main-bottom section .images-bottom .decoration-featured {
+  background-image: url("../images/cross.svg");
+  background-repeat: repeat;
+  background-size: 10px;
+  height: 70px;
+  width: 70px;
+}
+main .main-bottom section .images-bottom img {
+  height: 150px;
+  width: 150px;
+  top: 15px;
+  left: 15px;
+}
+main .main-bottom section .information-bottom {
+  margin-left: 110px;
+}
+main .main-bottom section .information-bottom h1 {
+  font-weight: bold;
+  font-size: 1.625em;
+}
+main .main-bottom section .information-bottom h2 {
+  font-size: 1em;
+  font-style: italic;
+  color: #ec5242;
+}
+main .main-bottom section .information-bottom h2:after {
+  content: "";
+  display: block;
+  margin: 10px 0;
+  width: 40px;
+  border: solid 1px #d3d3d3;
+}
+main .main-bottom .button-middle {
+  margin-top: 40px;
+  background-color: transparent;
+  color: #272a21;
+}
+main .main-bottom .button-middle button {
+  border: 2px solid #d3d3d3;
+  background-color: transparent;
+  color: #272a21;
+}
+main .main-bottom .button-middle button i {
+  color: #ec5242;
+}
+main .sponsors {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #414246;
+  color: #d3d3d3;
+}
+main .sponsors h1 {
+  font-size: 1.375em;
+}
+main .sponsors h1:after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  border: solid 1px #ec5242;
+}
+main .sponsors a {
+  font-size: 1.625em;
+  margin: 0 10px;
+}
+main .sponsors a i {
+  font-size: 2.25em;
+}
+
+.footer {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.footer img {
+  height: 60px;
+  width: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */
