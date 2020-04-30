@@ -92,7 +92,6 @@ nav {
 
   .bottom-nav {
     @include bs(0px 5px 16px -4px rgba(0, 0, 0, 0.36));
-
     margin-left: 0;
 
     img {
@@ -102,6 +101,10 @@ nav {
 
     li {
       margin-right: 2vw;
+
+      .checked-page {
+        color: $second-color;
+      }
     }
 
     button {
@@ -124,17 +127,29 @@ main {
     right: 0;
     position: absolute;
     z-index: -1;
-
-    background-image: url("/images/background-1.svg");
+    background-image: url("/images/background-2.svg");
     background-position: center 0;
 
     background-size: 100%;
-
     background-repeat: no-repeat;
   }
 
-  .fa-bars {
-    font-size: 200%;
+  .map {
+    padding-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    .fa-chevron-right {
+      color: $second-color;
+    }
+  }
+
+  a {
+    .fa-bars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 200%;
+    }
   }
 
   .main-top {
@@ -147,64 +162,62 @@ main {
     }
 
     h2 {
-      background-image: url("/images/29942-gettyimages-155302141.jpg");
-      color: transparent;
-      @include bg-clip(text);
+      color: $second-color;
       @include fz(60px);
       font-weight: bold;
       text-transform: uppercase;
       width: auto;
-      @media (min-width: 768px) {
-        width: 75%;
-      }
     }
 
     h3 {
-      border: 3px solid #fff;
-      padding: 10px;
-      background-color: lighten($third-color, 15%);
-      width: 75%;
+      background-color: #fff;
+      border: 3px solid $third-color;
+
+      @media (min-width: 768px) {
+        padding: 0 100px;
+        width: 100%;
+        margin: 0 0;
+      }
+
       line-height: 2;
       @include fz(16px);
     }
 
     h4 {
-      white-space: nowrap;
       width: auto;
-      margin-right: 100%;
-      background-color: red;
       font-weight: bold;
-      @include fz(30px);
-      text-transform: uppercase;
+      @include fz(16px);
+    }
+    h5 {
+      text-decoration: underline;
+      color: $first-color;
     }
   }
 
   .main-middle {
-    background-image: url("/images/two-rect.svg");
-    background-size: 40px;
-    background-repeat: repeat;
+    background-color: #fff;
     color: $third-color;
 
-    .title-main-middle {
-      font-weight: 600;
-      color: darken(#fff, 20%);
-
-      &:after {
-        @include after-line();
-      }
+    .border-top-bold {
+      border-top: $third-color 2px solid;
+      border-bottom: $third-color 2px solid;
+      padding-bottom: 20px;
     }
-
     section {
-      background-color: rgba(256, 256, 256, 0.2);
+      .title-main-middle {
+        font-weight: 600;
+        color: $first-color;
 
-      @media (min-width: 768px) {
-        margin: 0;
-        padding: 0;
+        &:after {
+          @include after-line();
+        }
       }
 
       div {
+        color: darken($third-color, 30%);
         width: auto;
         margin: auto 0;
+        margin-bottom: 10px;
 
         @media (min-width: 768px) {
           width: 100%;
@@ -212,25 +225,39 @@ main {
         }
       }
 
-      a {
-        font-weight: 600;
-        font-size: (26px/16px) * 1rem;
-        color: $second-color;
+      figure {
+        @include fz(26px);
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 30px;
+      }
 
-        &:hover {
-          color: darken($second-color, 10%);
+      .first-image {
+        height: 300px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 0, 0, 0.2),
+            rgba(255, 0, 0, 0.2)
+          ),
+          url("/images/29942-gettyimages-155302141.jpg");
+        background-size: cover, cover;
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 50%;
         }
       }
-
-      p {
-        color: $third-color;
+      .second-image {
+        @extend .first-image;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 0, 0, 0.2),
+            rgba(255, 0, 0, 0.2)
+          ),
+          url("/images/29942-gettyimages-155302141.jpg");
       }
-    }
-
-    button {
-      background-color: $second-color;
-      color: $third-color;
-      @include fz(26px);
     }
   }
 
@@ -256,6 +283,7 @@ main {
           @media (min-width: 768px) {
             background-image: url("/images/cross-gray.svg");
           }
+
           background-repeat: repeat;
           background-size: 10px;
           height: 70px;
@@ -340,6 +368,11 @@ main {
 }
 
 .footer {
+  @media (min-width: 768px) {
+    background-color: $first-color;
+    color: $third-color;
+  }
+
   padding-bottom: 50px;
   padding-top: 50px;
 

@@ -62,6 +62,9 @@ nav .bottom-nav img {
 nav .bottom-nav li {
   margin-right: 2vw;
 }
+nav .bottom-nav li .checked-page {
+  color: #ec5242;
+}
 nav .bottom-nav button {
   color: #ec5242;
   border: 4px solid #ec5242;
@@ -79,12 +82,23 @@ main:after {
   right: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/background-1.svg");
+  background-image: url("/images/background-2.svg");
   background-position: center 0;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-main .fa-bars {
+main .map {
+  padding-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+main .map .fa-chevron-right {
+  color: #ec5242;
+}
+main a .fa-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 200%;
 }
 main .main-top {
@@ -96,49 +110,48 @@ main .main-top h1 {
   color: #ec5242;
 }
 main .main-top h2 {
-  background-image: url("/images/29942-gettyimages-155302141.jpg");
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  color: #ec5242;
   font-size: 3.75em;
   font-weight: bold;
   text-transform: uppercase;
   width: auto;
 }
-@media (min-width: 768px) {
-  main .main-top h2 {
-    width: 75%;
-  }
-}
 main .main-top h3 {
-  border: 3px solid #fff;
-  padding: 10px;
-  background-color: #f9f9f9;
-  width: 75%;
+  background-color: #fff;
+  border: 3px solid lightgray;
   line-height: 2;
   font-size: 1em;
 }
+@media (min-width: 768px) {
+  main .main-top h3 {
+    padding: 0 100px;
+    width: 100%;
+    margin: 0 0;
+  }
+}
 main .main-top h4 {
-  white-space: nowrap;
   width: auto;
-  margin-right: 100%;
-  background-color: red;
   font-weight: bold;
-  font-size: 1.875em;
-  text-transform: uppercase;
+  font-size: 1em;
+}
+main .main-top h5 {
+  text-decoration: underline;
+  color: #272a21;
 }
 main .main-middle {
-  background-image: url("/images/two-rect.svg");
-  background-size: 40px;
-  background-repeat: repeat;
+  background-color: #fff;
   color: lightgray;
 }
-main .main-middle .title-main-middle {
-  font-weight: 600;
-  color: #cccccc;
+main .main-middle .border-top-bold {
+  border-top: lightgray 2px solid;
+  border-bottom: lightgray 2px solid;
+  padding-bottom: 20px;
 }
-main .main-middle .title-main-middle:after {
+main .main-middle section .title-main-middle {
+  font-weight: 600;
+  color: #272a21;
+}
+main .main-middle section .title-main-middle:after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -146,18 +159,11 @@ main .main-middle .title-main-middle:after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
-main .main-middle section {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-@media (min-width: 768px) {
-  main .main-middle section {
-    margin: 0;
-    padding: 0;
-  }
-}
 main .main-middle section div {
+  color: #878787;
   width: auto;
   margin: auto 0;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   main .main-middle section div {
@@ -165,21 +171,28 @@ main .main-middle section div {
     margin: 10px 0;
   }
 }
-main .main-middle section a {
-  font-weight: 600;
-  font-size: 1.625rem;
-  color: #ec5242;
-}
-main .main-middle section a:hover {
-  color: #e42a17;
-}
-main .main-middle section p {
-  color: lightgray;
-}
-main .main-middle button {
-  background-color: #ec5242;
-  color: lightgray;
+main .main-middle section figure {
   font-size: 1.625em;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 30px;
+}
+main .main-middle section .first-image, main .main-middle section .second-image {
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("/images/29942-gettyimages-155302141.jpg");
+  background-size: cover, cover;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main .main-middle section .first-image, main .main-middle section .second-image {
+    width: 50%;
+  }
+}
+main .main-middle section .second-image {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("/images/29942-gettyimages-155302141.jpg");
 }
 main .main-bottom {
   background-color: #fff;
@@ -280,6 +293,12 @@ main .sponsors a i {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+@media (min-width: 768px) {
+  .footer {
+    background-color: #272a21;
+    color: lightgray;
+  }
+}
 .footer img {
   background-color: lightgray;
   border-radius: 50%;
@@ -287,4 +306,4 @@ main .sponsors a i {
   width: 60px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */

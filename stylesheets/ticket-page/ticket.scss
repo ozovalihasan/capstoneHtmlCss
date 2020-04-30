@@ -1,0 +1,281 @@
+$first-color: #272a21;
+$second-color: rgb(236, 82, 66);
+$third-color: rgb(211, 211, 211);
+$font-1: "Lato", sans-serif;
+$font-2: "COCOGOOSE", sans-serif;
+
+@mixin fz($size) {
+  font-size: ($size/16px) * 1em;
+}
+
+@mixin suitable($value,$value2) {
+  -webkit-#{$value}: $value2;
+  -moz-#{$value}: $value2;
+  #{$value}: $value2;
+}
+
+@mixin after-line {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  background-color: $second-color;
+  border: solid 1px $second-color;
+}
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: red;
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.main-padding {
+  padding: 0 40px ;
+
+  @media (min-width: 768px) {
+    padding: 0 15% 0 10%;
+  }
+}
+
+.second-color {
+  color: $second-color
+}
+
+body {
+  @media (min-width: 768px) {
+    width: 75%;
+  }
+
+  width: 100%;
+}
+
+nav {
+  height: auto;
+
+  .top-nav {
+    background-color: $first-color;
+    color: $third-color;
+
+    i {
+      margin: 5px 10px;
+    }
+
+    ul {
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .bottom-nav {
+    @include suitable(box-shadow,0px 5px 16px -4px rgba(0, 0, 0, 0.36));
+    margin-left: 0;
+
+    img {
+      height: 70px;
+      width: 50px;
+    }
+
+    li {
+      margin-right: 2vw;
+
+      .checked-page {
+        color: $second-color;
+      }
+    }
+
+    button {
+      color: $second-color;
+      border: 4px solid $second-color;
+      margin: 10px;
+      padding: 3px 10px;
+      margin-right: 0;
+    }
+  }
+}
+
+main {
+  .map {
+    padding-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    .fa-chevron-right {
+      color: $second-color;
+    }
+  }
+
+  a {
+    .fa-bars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 200%;
+    }
+  }
+
+  .steps {
+    color: darken($third-color, 30%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h1 {
+      @include fz(20px);
+      &:after{
+        @include after-line()
+      }
+    }
+    h2 {
+      @include fz(16px);
+      border: solid $third-color 1px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      padding:10px;
+      border-radius: 20px;
+      display: list-item;                                                     
+      list-style-position: inside;
+      color: $second-color;
+      span {
+        color: $first-color;        
+      }
+    }
+
+    .table-ticket {
+      $width-border: 10px;
+      padding: $width-border;
+      background-image: linear-gradient(0deg, $third-color,$third-color ),
+        repeating-linear-gradient(
+          -45deg,
+          blue,
+          blue 5px,
+          white,
+          white 10px,
+          red,
+          red 15px,
+          white,
+          white 20px
+        );
+      background-size: calc(100% - #{$width-border}*2 )
+          calc(100% - #{$width-border}*2 ),
+        100% 100%;
+      background-position: 50%, 50%;
+      background-repeat: no-repeat;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 1px;
+
+      div {
+        padding: 10px 0;
+        background-color: #fff;
+      }
+
+      
+
+      .two-column {
+        grid-column-end: span 2;
+      }
+
+      
+    }
+    &.step-1 {
+      background-color: lighten($third-color,15%);
+    }
+
+    &.step-2 {
+      position: relative; 
+      padding-top: 0;
+
+      .down-arrow {
+        background-color: $second-color;
+        color: #fff;
+        height: 40px;
+        width: 40px;
+        padding-top: 7px;
+        margin: 0 auto;
+
+        @include suitable(transform,rotateZ(45deg));
+
+        i {
+          @include suitable(transform,rotateZ(-45deg));
+
+
+        }
+      }
+
+      .name-menu {
+        @include fz(20px);
+        margin-top: 20px;
+        padding: 10px;
+        background-color: lighten($third-color,10%);
+      }
+
+      .first-menu {
+        @include fz(20px);
+        padding: 1vw;
+        width: 100%;
+        border: 1px solid $third-color;
+        label {
+          margin: 0 10px;
+        }
+      }
+
+      .second-menu {
+        @extend .first-menu;
+      }
+    
+    button {
+      background-color: $second-color;
+      border: none;
+      width: 200px;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    }
+
+
+
+  }
+
+  .main-middle {
+    background-color: #fff;
+    color: $third-color;
+  }
+}
+
+.footer {
+    background-color: $first-color;
+    color: $third-color;
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  img {
+    background-color: $third-color;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+}

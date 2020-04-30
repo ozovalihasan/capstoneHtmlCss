@@ -1,292 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="icon" href="/images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/8c7f545978.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="stylesheets/reset.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="stylesheets/main.css" />
-  <link rel="icon" href="images/icon.png" />
-  <script src="https://kit.fontawesome.com/8c7f545978.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</head>
-
-<body class="w-100">
-  <nav class="d-none d-md-block">
-    <div class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center">
-      <div class="icons ml-auto">
-        <i class="h-2 fab fa-facebook-f"></i>
-        <i class="h-2 fab fa-twitter"></i>
-      </div>
-      <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
-        <li class="">Logout</li>
-        <li class="">Mypage</li>
-        <li class="">Turkish</li>
-      </ul>
-    </div>
-    <div class="bottom-nav main-padding row w-100 align-items-center">
-      <img class="logo" src="images/logo.svg" alt="" />
-      <ul class="row ml-auto mb-0 align-items-center">
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Sponsor</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
-      <button class="bg-transparent">
-        CC Campaign
-      </button>
-    </div>
-  </nav>
-
-  <main class="position-relative">
-    <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
-    <div class="main-top main-padding">
-      <h1>
-        "Hello! Sharing World"
-      </h1>
-      <h2>
-        Creative Commons global summit
-      </h2>
-      <h3 class="mx-3 my-5">
-        A joyful celebration believing in the value of openness and sharing,
-        creating a positive change with people from over 80 countries is
-        taking place in October, in Korea.
-      </h3>
-
-      <h4>
-        2015.10.15(THU) ~ 16(FRI)
-      </h4>
-      <h5>
-        @national Museum of Korea, Art Center Nabi and more
-      </h5>
-    </div>
-    <div class="main-middle w-100 pb-2 main-padding">
-      <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
-        Main program
-      </h2>
-
-      <div class="d-md-flex d-block">
-        <section class="d-flex flex-nowrap flex-md-wrap  p-3 p-md-0 m-3 m-md-1 w-100  align-items-center " >
-          <div class="m-3 my-2 d-flex  ">
-
-            <i class="fas fa-dragon  mx-md-auto "></i>
-          </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
-          <p class="p-3 w-100 my-auto text-center">Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.</p>
-        </section>
-         <section class="d-flex flex-nowrap flex-md-wrap  p-3 p-md-0 m-3 m-md-1 w-100  align-items-center" >
-          <div class="m-3 my-2 d-flex  ">
-
-            <i class="fas fa-dragon  mx-md-auto "></i>
-          </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
-          <p class="p-3 w-100 my-auto text-center">Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.</p>
-        </section>
-         <section class="d-flex flex-nowrap flex-md-wrap  p-3 p-md-0 m-3 m-md-1 w-100  align-items-center" >
-          <div class="m-3 my-2 d-flex  ">
-
-            <i class="fas fa-dragon  mx-md-auto "></i>
-          </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
-          <p class="p-3 w-100 my-auto text-center">Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.</p>
-        </section>
-         <section class="d-flex flex-nowrap flex-md-wrap  p-3 p-md-0 m-3 m-md-1 w-100  align-items-center" >
-          <div class="m-3 my-2 d-flex  ">
-
-            <i class="fas fa-dragon  mx-md-auto "></i>
-          </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
-          <p class="p-3 w-100 my-auto text-center">Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.</p>
-        </section>
-         <section class="d-flex flex-nowrap flex-md-wrap  p-3 p-md-0 m-3 m-md-1 w-100  align-items-center" >
-          <div class="m-3 my-2 d-flex  ">
-
-            <i class="fas fa-dragon  mx-md-auto "></i>
-          </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
-          <p class="p-3 w-100 my-auto text-center">Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.</p>
-        </section>
-      </div>
-      <button class="d-flex mx-auto w-auto border-0 px-5 py-4 h-auto my-5">
-        <div>
-          Join CC Global Summit 2015
+  <body class="w-100">
+    <nav class="d-none d-md-block">
+      <div
+        class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center"
+      >
+        <div class="icons ml-auto">
+          <a href="#">
+            <i class="h-2 fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="h-2 fab fa-twitter"></i>
+          </a>
         </div>
-      </button>
-    </div>
-    <div class="main-bottom w-100 main-padding">
-      <h2 class="title-main-bottom py-4 text-center">
-        Featured Speakers
-      </h2>
-
-      <div class="row">
-        <div class="col-auto col-md-6">
-          <section class="d-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-          <section class="d-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-          <section class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-        </div>
-        <div class="col-auto col-md-6">
-          <section class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-          <section class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-          <section class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center">
-            <div class="images-bottom d-block position-relative">
-              <div class="decoration-featured"></div>
-              <img class="position-absolute" src="images/profil1.jpg" alt="" />
-            </div>
-            <div class="information-bottom">
-              <h1>
-                Yochai Benkler
-              </h1>
-              <h2>
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </h2>
-              <p>
-                Benkler studies commons-based peer production, and published
-                his seminal book The Wealth of Networks in 2006.
-              </p>
-            </div>
-          </section>
-        </div>
+        <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
+          <a href="#"><li class="">Logout</li></a>
+          <a href="#"><li class="">Mypage</li></a>
+          <a href="#"><li class="">Turkish</li></a>
+        </ul>
       </div>
-
-      <div class="button-middle d-md-none w-100 px-2">
-        <button class="w-100 mx-auto px-5 py-3">
-          MORE
-
-          <i class="fas fa-angle-down"></i>
+      <div class="bottom-nav main-padding row w-100 align-items-center">
+        <a href="/index.html">
+          <img class="logo" src="/images/logo.svg" alt="" />
+        </a>
+        <ul class="row ml-auto mb-0 align-items-center">
+          <li><a href="/more-pages/about.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="/more-pages/ticket.html">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <button class="bg-transparent">
+          CC Campaign
         </button>
       </div>
-    </div>
-    <div class="sponsors d-none d-md-flex flex-wrap main-padding">
-      <h1 class="w-100 mx-auto text-center">
-        Partner
-      </h1>
-      <div class="row w-100 justify-content-center align-items-center">
-        <a href="#">mozilla</a>
-        <a href="#" class="font-weight-light">Google</a>
-        <a href="#" class="font-weight-bolder">Naver</a>
-        <a href="#">daumkakao</a>
-        <a href="#" class="d-flex align-items-center">
-          <i class="fab fa-airbnb"></i>
-          airbnb
-        </a>
+    </nav>
+
+    <main class="position-relative">
+      <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
+      <div class="main-top main-padding">
+        <h1>
+          "Hello! Sharing World"
+        </h1>
+        <h2>
+          Creative Commons global summit
+        </h2>
+        <h3 class="mr-3 my-5">
+          A joyful celebration believing in the value of openness and sharing,
+          creating a positive change with people from over 80 countries is
+          taking place in October, in Korea.
+        </h3>
+
+        <h4>
+          2015.10.15(THU) ~ 16(FRI)
+        </h4>
+        <h5>
+          @national Museum of Korea, Art Center Nabi and more
+        </h5>
       </div>
-    </div>
-  </main>
-  <footer class="footer d-none d-md-flex main-padding w-100 justify-content-center align-items-center">
-    <img src="images/logo.svg" alt="" />
-    <div class="footer-text ml-3">
-      2020 Creative Commons Korea. Some Rights Reserved
-    </div>
-  </footer>
+      <div class="main-middle w-100 pb-2 main-padding">
+        <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
+          Main program
+        </h2>
 
-  <script src="script.js"></script>
-</body>
+        <div class="d-md-flex d-block">
+          <section
+            class="d-flex flex-nowrap flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100 align-items-center"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-dragon mx-md-auto"></i>
+            </div>
 
+            <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.
+            </p>
+          </section>
+          <section
+            class="d-flex flex-nowrap flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100 align-items-center"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-dragon mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.
+            </p>
+          </section>
+          <section
+            class="d-flex flex-nowrap flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100 align-items-center"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-dragon mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.
+            </p>
+          </section>
+          <section
+            class="d-flex flex-nowrap flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100 align-items-center"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-dragon mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.
+            </p>
+          </section>
+          <section
+            class="d-flex flex-nowrap flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100 align-items-center"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-dragon mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Lecture</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Lorem ipsum dolor sit amet, ferri mundi admodum no pri, mel errem.
+            </p>
+          </section>
+        </div>
+        <button class="d-flex mx-auto w-auto border-0 px-5 py-4 h-auto my-5">
+          <div>
+            Join CC Global Summit 2015
+          </div>
+        </button>
+      </div>
+      <div class="main-bottom w-100 main-padding">
+        <h2 class="title-main-bottom py-4 text-center">
+          Featured Speakers
+        </h2>
+
+        <div class="row">
+          <div class="col-auto col-md-6">
+            <section
+              class="d-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+            <section
+              class="d-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+            <section
+              class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="col-auto col-md-6">
+            <section
+              class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+            <section
+              class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+            <section
+              class="d-none d-md-flex row flex-nowrap pb-5 pt-3 m-3 justify-content-center"
+            >
+              <div class="images-bottom d-block position-relative">
+                <div class="decoration-featured"></div>
+                <img
+                  class="position-absolute"
+                  src="/images/profil1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="information-bottom">
+                <h1>
+                  Yochai Benkler
+                </h1>
+                <h2>
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </h2>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="button-middle d-md-none w-100 px-2">
+          <button class="w-100 mx-auto px-5 py-3">
+            MORE
+
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="sponsors d-none d-md-flex flex-wrap main-padding">
+        <h1 class="w-100 mx-auto text-center">
+          Partner
+        </h1>
+        <div class="row w-100 justify-content-center align-items-center">
+          <a href="#">mozilla</a>
+          <a href="#" class="font-weight-light">Google</a>
+          <a href="#" class="font-weight-bolder">Naver</a>
+          <a href="#">daumkakao</a>
+          <a href="#" class="d-flex align-items-center">
+            <i class="fab fa-airbnb"></i>
+            airbnb
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer d-none d-md-flex main-padding w-100 justify-content-center align-items-center"
+    >
+    <a href="/index.html">
+      <img src="/images/logo.svg" alt="" />
+    </a>
+      <div class="footer-text ml-3">
+        2020 Creative Commons Korea. Some Rights Reserved
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
