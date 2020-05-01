@@ -84,7 +84,7 @@ main::after {
   right: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/background-2.svg");
+  background-image: url("../../images/background-2.svg");
   background-position: center 0;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ main .main-middle section figure {
 }
 main .main-middle section .first-image, main .main-middle section .second-image {
   height: 300px;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("/images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("../../images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
   background-size: cover, cover;
   width: 100%;
 }
@@ -197,7 +197,7 @@ main .main-middle section .first-image, main .main-middle section .second-image 
   }
 }
 main .main-middle section .second-image {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("/images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("../../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
 }
 main .main-bottom {
   background-color: #fff;
@@ -220,7 +220,7 @@ main .main-bottom section .images-bottom {
   height: auto;
 }
 main .main-bottom section .images-bottom .decoration-featured {
-  background-image: url("/images/cross.svg");
+  background-image: url("../../images/cross.svg");
   background-repeat: repeat;
   background-size: 10px;
   height: 70px;
@@ -228,7 +228,7 @@ main .main-bottom section .images-bottom .decoration-featured {
 }
 @media (min-width: 768px) {
   main .main-bottom section .images-bottom .decoration-featured {
-    background-image: url("/images/cross-gray.svg");
+    background-image: url("../../images/cross-gray.svg");
   }
 }
 main .main-bottom section .images-bottom img {
