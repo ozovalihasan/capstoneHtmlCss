@@ -25,11 +25,12 @@ $font-2: "COCOGOOSE", sans-serif;
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+  src:
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -51,7 +52,7 @@ ul {
 }
 
 .main-padding {
-  padding: 0 40px ;
+  padding: 0 40px;
 
   @media (min-width: 768px) {
     padding: 0 15% 0 10%;
@@ -59,7 +60,7 @@ ul {
 }
 
 .second-color {
-  color: $second-color
+  color: $second-color;
 }
 
 body {
@@ -90,7 +91,9 @@ nav {
 
   .bottom-nav {
     background-color: #fff;
-    @include suitable(box-shadow,0px 5px 16px -4px rgba(0, 0, 0, 0.36));
+
+    @include suitable(box-shadow,0 5px 16px -4px rgba(0, 0, 0, 0.36));
+
     margin-left: 0;
 
     img {
@@ -98,12 +101,14 @@ nav {
       height: 70px;
       width: 70px;
     }
+    ul {
 
-    li {
-      margin-right: 2vw;
-
-      .checked-page {
-        color: $second-color;
+      li {
+        margin-right: 2vw;
+        
+        .checked-page {
+          color: $second-color;
+        }
       }
     }
 
@@ -122,6 +127,7 @@ main {
     padding-top: 10px;
     margin-right: 10px;
     text-align: right;
+
     .fa-chevron-right {
       color: $second-color;
     }
@@ -143,29 +149,34 @@ main {
 
     h1 {
       @include fz(20px);
-      &:after{
-        @include after-line()
-      }
+
+      &::after {
+        @include after-line(); }
     }
+
     h2 {
       @include fz(16px);
+
       border: solid $third-color 1px;
       margin-top: 40px;
       margin-bottom: 50px;
-      padding:10px;
+      padding: 10px;
       border-radius: 20px;
-      display: list-item;                                                     
+      display: list-item;
       list-style-position: inside;
       color: $second-color;
+
       span {
-        color: $first-color;        
+        color: $first-color;
       }
     }
 
     .table-ticket {
       $width-border: 10px;
+
       padding: $width-border;
-      background-image: linear-gradient(0deg, $third-color,$third-color ),
+      background-image:
+        linear-gradient(0deg, $third-color, $third-color),
         repeating-linear-gradient(
           -45deg,
           blue,
@@ -177,12 +188,12 @@ main {
           white,
           white 20px
         );
-      background-size: calc(100% - #{$width-border}*2 )
-          calc(100% - #{$width-border}*2 ),
+      background-size:
+        calc(100% - #{$width-border} * 2)
+        calc(100% - #{$width-border} * 2),
         100% 100%;
       background-position: 50%, 50%;
       background-repeat: no-repeat;
-
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -193,20 +204,19 @@ main {
         background-color: #fff;
       }
 
-      
+
 
       .two-column {
         grid-column-end: span 2;
       }
-
-      
     }
+
     &.step-1 {
-      background-color: lighten($third-color,15%);
+      background-color: lighten($third-color, 15%);
     }
 
     &.step-2 {
-      position: relative; 
+      position: relative;
       padding-top: 0;
 
       .down-arrow {
@@ -221,23 +231,24 @@ main {
 
         i {
           @include suitable(transform,rotateZ(-45deg));
-
-
         }
       }
 
       .name-menu {
         @include fz(20px);
+
         margin-top: 20px;
         padding: 10px;
-        background-color: lighten($third-color,10%);
+        background-color: lighten($third-color, 10%);
       }
 
       .first-menu {
         @include fz(20px);
+
         padding: 1vw;
         width: 100%;
         border: 1px solid $third-color;
+
         label {
           margin: 0 10px;
         }
@@ -246,19 +257,15 @@ main {
       .second-menu {
         @extend .first-menu;
       }
-    
-    button {
-      background-color: $second-color;
-      border: none;
-      width: 200px;
-      margin: 20px;
-      padding: 20px;
+
+      button {
+        background-color: $second-color;
+        border: none;
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+      }
     }
-
-    }
-
-
-
   }
 
   .main-middle {
@@ -268,16 +275,17 @@ main {
 }
 
 .footer {
-    background-color: $first-color;
-    color: $third-color;
-
+  background-color: $first-color;
+  color: $third-color;
   padding-bottom: 50px;
   padding-top: 50px;
+  a {
 
-  img {
-    background-color: $third-color;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    img {
+      background-color: $third-color;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
   }
 }

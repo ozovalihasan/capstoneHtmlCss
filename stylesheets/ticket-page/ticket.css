@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @font-face {
   font-family: "COCOGOOSE";
   src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
+
 a {
   color: inherit;
 }
+
 a:hover {
   color: red;
   text-decoration: none;
@@ -21,6 +24,7 @@ ul {
 .main-padding {
   padding: 0 40px;
 }
+
 @media (min-width: 768px) {
   .main-padding {
     padding: 0 15% 0 10%;
@@ -34,6 +38,7 @@ ul {
 body {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   body {
     width: 75%;
@@ -43,34 +48,42 @@ body {
 nav {
   height: auto;
 }
+
 nav .top-nav {
   background-color: #272a21;
   color: lightgray;
 }
+
 nav .top-nav i {
   margin: 5px 10px;
 }
+
 nav .top-nav ul li {
   margin: 0 10px;
 }
+
 nav .bottom-nav {
   background-color: #fff;
-  -webkit-box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
-  box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
+  box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
   margin-left: 0;
 }
+
 nav .bottom-nav img {
   border-radius: 50%;
   height: 70px;
   width: 70px;
 }
-nav .bottom-nav li {
+
+nav .bottom-nav ul li {
   margin-right: 2vw;
 }
-nav .bottom-nav li .checked-page {
+
+nav .bottom-nav ul li .checked-page {
   color: #ec5242;
 }
+
 nav .bottom-nav button {
   color: #ec5242;
   border: 4px solid #ec5242;
@@ -84,24 +97,29 @@ main .map {
   margin-right: 10px;
   text-align: right;
 }
+
 main .map .fa-chevron-right {
   color: #ec5242;
 }
+
 main a .fa-bars {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 200%;
 }
+
 main .steps {
   color: #878787;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 main .steps h1 {
   font-size: 1.25em;
 }
-main .steps h1:after {
+
+main .steps h1::after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -109,6 +127,7 @@ main .steps h1:after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
+
 main .steps h2 {
   font-size: 1em;
   border: solid lightgray 1px;
@@ -120,13 +139,15 @@ main .steps h2 {
   list-style-position: inside;
   color: #ec5242;
 }
+
 main .steps h2 span {
   color: #272a21;
 }
+
 main .steps .table-ticket {
   padding: 10px;
   background-image: linear-gradient(0deg, lightgray, lightgray), repeating-linear-gradient(-45deg, blue, blue 5px, white, white 10px, red, red 15px, white, white 20px);
-  background-size: calc(100% - 10px*2 ) calc(100% - 10px*2 ), 100% 100%;
+  background-size: calc(100% - 10px * 2) calc(100% - 10px * 2), 100% 100%;
   background-position: 50%, 50%;
   background-repeat: no-repeat;
   display: grid;
@@ -134,20 +155,25 @@ main .steps .table-ticket {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1px;
 }
+
 main .steps .table-ticket div {
   padding: 10px 0;
   background-color: #fff;
 }
+
 main .steps .table-ticket .two-column {
   grid-column-end: span 2;
 }
+
 main .steps.step-1 {
   background-color: #f9f9f9;
 }
+
 main .steps.step-2 {
   position: relative;
   padding-top: 0;
 }
+
 main .steps.step-2 .down-arrow {
   background-color: #ec5242;
   color: #fff;
@@ -159,26 +185,33 @@ main .steps.step-2 .down-arrow {
   -moz-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
+
 main .steps.step-2 .down-arrow i {
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
+
 main .steps.step-2 .name-menu {
   font-size: 1.25em;
   margin-top: 20px;
   padding: 10px;
   background-color: #ededed;
 }
-main .steps.step-2 .first-menu, main .steps.step-2 .second-menu {
+
+main .steps.step-2 .first-menu,
+main .steps.step-2 .second-menu {
   font-size: 1.25em;
   padding: 1vw;
   width: 100%;
   border: 1px solid lightgray;
 }
-main .steps.step-2 .first-menu label, main .steps.step-2 .second-menu label {
+
+main .steps.step-2 .first-menu label,
+main .steps.step-2 .second-menu label {
   margin: 0 10px;
 }
+
 main .steps.step-2 button {
   background-color: #ec5242;
   border: none;
@@ -186,6 +219,7 @@ main .steps.step-2 button {
   margin: 20px;
   padding: 20px;
 }
+
 main .main-middle {
   background-color: #fff;
   color: lightgray;
@@ -197,11 +231,10 @@ main .main-middle {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.footer img {
+
+.footer a img {
   background-color: lightgray;
   border-radius: 50%;
   height: 60px;
   width: 60px;
 }
-
-/*# sourceMappingURL=ticket.css.map */

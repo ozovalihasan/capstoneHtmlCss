@@ -31,11 +31,12 @@ $font-2: "COCOGOOSE", sans-serif;
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+  src:
+    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
     url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,7 +93,9 @@ nav {
 
   .bottom-nav {
     background-color: #fff;
-    @include bs(0px 5px 16px -4px rgba(0, 0, 0, 0.36));
+
+    @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
+
     margin-left: 0;
 
     img {
@@ -100,12 +103,14 @@ nav {
       height: 70px;
       width: 70px;
     }
+    ul {
 
-    li {
-      margin-right: 1vw;
-
-      .checked-page {
-        color: $second-color;
+      li {
+        margin-right: 1vw;
+        
+        .checked-page {
+          color: $second-color;
+        }
       }
     }
 
@@ -120,7 +125,7 @@ nav {
 }
 
 main {
-  &:after {
+  &::after {
     content: "";
     opacity: 1;
     top: 0;
@@ -131,7 +136,6 @@ main {
     z-index: -1;
     background-image: url("/images/background-2.svg");
     background-position: center 0;
-
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -140,6 +144,7 @@ main {
     padding-top: 10px;
     margin-right: 10px;
     text-align: right;
+
     .fa-chevron-right {
       color: $second-color;
     }
@@ -165,7 +170,9 @@ main {
 
     h2 {
       color: $second-color;
+
       @include fz(60px);
+
       font-weight: bold;
       text-transform: uppercase;
       width: auto;
@@ -182,14 +189,17 @@ main {
       }
 
       line-height: 2;
+
       @include fz(16px);
     }
 
     h4 {
       width: auto;
       font-weight: bold;
+
       @include fz(16px);
     }
+
     h5 {
       text-decoration: underline;
       color: $first-color;
@@ -205,12 +215,13 @@ main {
       border-bottom: $third-color 2px solid;
       padding-bottom: 20px;
     }
+
     section {
       .title-main-middle {
         font-weight: 600;
         color: $first-color;
 
-        &:after {
+        &::after {
           @include after-line();
         }
       }
@@ -218,6 +229,7 @@ main {
       .logo-middle {
         width: 75vw;
       }
+
       div {
         color: darken($third-color, 30%);
         width: auto;
@@ -232,6 +244,7 @@ main {
 
       figure {
         @include fz(26px);
+
         color: #fff;
         flex-direction: column;
         justify-content: center;
@@ -242,7 +255,8 @@ main {
 
       .first-image {
         height: 300px;
-        background-image: linear-gradient(
+        background-image:
+          linear-gradient(
             to bottom,
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
@@ -250,14 +264,17 @@ main {
           url("/images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
         background-size: cover, cover;
         width: 100%;
-        
+
         @media (min-width: 768px) {
           width: 50%;
         }
       }
+
       .second-image {
         @extend .first-image;
-        background-image: linear-gradient(
+
+        background-image:
+          linear-gradient(
             to bottom,
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
@@ -272,12 +289,13 @@ main {
     height: auto;
     margin-bottom: 10px;
 
-    .title-main-bottom:after {
+    .title-main-bottom::after {
       @include after-line();
     }
 
     section {
       height: auto;
+
       @include fz(14px);
 
       .images-bottom {
@@ -298,9 +316,11 @@ main {
 
         img {
           $h-img: 150px !global;
+
           height: $h-img;
           width: $h-img;
           $position-img: 15px !global;
+
           top: $position-img;
           left: $position-img;
         }
@@ -311,16 +331,18 @@ main {
 
         h1 {
           font-weight: bold;
+
           @include fz(26px);
         }
 
         h2 {
           @include fz(16px);
+
           font-style: italic;
           color: $second-color;
         }
 
-        h2:after {
+        h2::after {
           content: "";
           display: block;
           margin: 10px 0;
@@ -330,40 +352,26 @@ main {
       }
     }
 
-    .button-middle {
-      margin-top: 40px;
-      background-color: transparent;
-      color: $first-color;
-
-      button {
-        border: 2px solid $third-color;
-        background-color: transparent;
-        color: $first-color;
-
-        i {
-          color: $second-color;
-        }
-      }
-    }
+    
   }
 
   .sponsors {
     padding-top: 20px;
     padding-bottom: 20px;
-
     background-color: #414246;
     color: $third-color;
 
-    h1 {
+    .title-sponsors {
       @include fz(22px);
 
-      &:after {
+      &::after {
         @include after-line();
       }
     }
 
     a {
       @include fz(26px);
+
       margin: 0 10px;
 
       i {
@@ -381,11 +389,13 @@ main {
 
   padding-bottom: 50px;
   padding-top: 50px;
+a {
 
-  img {
+  .footer-image {
     background-color: $third-color;
     border-radius: 50%;
     height: 60px;
     width: 60px;
   }
+}
 }

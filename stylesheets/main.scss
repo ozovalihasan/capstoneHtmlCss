@@ -51,6 +51,12 @@ a {
   }
 }
 
+.darken-hover:hover {
+  color: darken($second-color, 10%);
+  
+}
+
+
 ul {
   list-style-type: none;
   padding-inline-start: 0;
@@ -78,6 +84,7 @@ nav {
   .top-nav {
     background-color: $first-color;
     color: $third-color;
+
     i {
       margin: 5px 10px;
     }
@@ -91,7 +98,8 @@ nav {
 
   .bottom-nav {
     background-color: #fff;
-    @include bs(0px 5px 16px -4px rgba(0, 0, 0, 0.36));
+
+    @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
 
     margin-left: 0;
 
@@ -100,9 +108,10 @@ nav {
       height: 70px;
       width: 70px;
     }
-
-    li {
-      margin-right: 2vw;
+    ul {
+      li {
+        margin-right: 2vw;
+      }
     }
 
     button {
@@ -116,7 +125,7 @@ nav {
 }
 
 main {
-  &:after {
+  &::after {
     content: "";
     opacity: 1;
     top: 0;
@@ -125,12 +134,9 @@ main {
     right: 0;
     position: absolute;
     z-index: -1;
-
     background-image: url("/images/background-1.svg");
     background-position: center 0;
-
     background-size: 100%;
-
     background-repeat: no-repeat;
   }
 
@@ -152,11 +158,14 @@ main {
       background-position: 50%;
       background-size: 50px;
       color: transparent;
+
       @include bg-clip(text);
       @include fz(60px);
+
       font-weight: bold;
       text-transform: uppercase;
       width: auto;
+
       @media (min-width: 768px) {
         width: 75%;
       }
@@ -168,6 +177,7 @@ main {
       background-color: lighten($third-color, 15%);
       width: 75%;
       line-height: 2;
+
       @include fz(16px);
     }
 
@@ -177,7 +187,9 @@ main {
       margin-right: 100%;
       background-color: red;
       font-weight: bold;
+
       @include fz(30px);
+
       text-transform: uppercase;
     }
   }
@@ -192,7 +204,7 @@ main {
       font-weight: 600;
       color: darken(#fff, 20%);
 
-      &:after {
+      &::after {
         @include after-line();
       }
     }
@@ -213,8 +225,9 @@ main {
           width: 100%;
           margin: 10px 0;
         }
+
         i {
-          @include fz(30px)
+          @include fz(30px);
         }
       }
 
@@ -223,9 +236,7 @@ main {
         font-size: (26px/16px) * 1rem;
         color: $second-color;
 
-        &:hover {
-          color: darken($second-color, 10%);
-        }
+        
       }
 
       p {
@@ -236,109 +247,30 @@ main {
     button {
       background-color: $second-color;
       color: $third-color;
+
       @include fz(26px);
-    }
-  }
-
-  .main-bottom {
-    background-color: #fff;
-    height: auto;
-    margin-bottom: 10px;
-
-    .title-main-bottom:after {
-      @include after-line();
-    }
-
-    section {
-      height: auto;
-      @include fz(14px);
-
-      .images-bottom {
-        height: auto;
-
-        .decoration-featured {
-          background-image: url("/images/cross.svg");
-
-          @media (min-width: 768px) {
-            background-image: url("/images/cross-gray.svg");
-          }
-          background-repeat: repeat;
-          background-size: 10px;
-          height: 70px;
-          width: 70px;
-        }
-
-        img {
-          $h-img: 150px !global;
-          height: $h-img;
-          width: $h-img;
-          $position-img: 15px !global;
-          top: $position-img;
-          left: $position-img;
-        }
-      }
-
-      .information-bottom {
-        margin-left: 110px;
-
-        h1 {
-          font-weight: bold;
-          @include fz(26px);
-        }
-
-        h2 {
-          @include fz(16px);
-          font-style: italic;
-          color: $second-color;
-        }
-
-        h2:after {
-          content: "";
-          display: block;
-          margin: 10px 0;
-          width: 40px;
-          border: solid 1px $third-color;
-        }
-      }
-    }
-
-    .button-middle {
-      margin-top: 40px;
-      background-color: transparent;
-      color: $first-color;
-
-      button {
-        border: 2px solid $third-color;
-        background-color: transparent;
-        color: $first-color;
-
-        i {
-          color: $second-color;
-        }
-      }
     }
   }
 
   .sponsors {
     padding-top: 20px;
     padding-bottom: 20px;
-
     background-color: #414246;
     color: $third-color;
 
     h1 {
       @include fz(22px);
 
-      &:after {
+      &::after {
         @include after-line();
       }
     }
+    div {
+      a {
+        @include fz(26px);
 
-    a {
-      @include fz(26px);
-      margin: 0 10px;
-
-    
+        margin: 0 10px;
+      }
     }
   }
 }
@@ -346,11 +278,12 @@ main {
 .footer {
   padding-bottom: 50px;
   padding-top: 50px;
-
-  img {
-    background-color: $third-color;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
+  a {
+    img {
+      background-color: $third-color;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
   }
 }
