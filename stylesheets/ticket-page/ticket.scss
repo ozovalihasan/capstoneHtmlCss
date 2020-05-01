@@ -1,14 +1,38 @@
 $first-color: #272a21;
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
-$font-1: "Lato", apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-$font-2: "COCOGOOSE", apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$font-1: "Lato",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+$font-2: "COCOGOOSE",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
 }
 
-@mixin suitable($value,$value2) {
+@mixin suitable($value, $value2) {
   -webkit-#{$value}: $value2;
   -moz-#{$value}: $value2;
   #{$value}: $value2;
@@ -28,8 +52,7 @@ $font-2: "COCOGOOSE", apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helveti
   src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,7 +63,8 @@ a {
   color: inherit;
 
   &:hover {
-    color: red;
+    color: darken($second-color, 20%);
+
     text-decoration: none;
   }
 }
@@ -63,7 +87,7 @@ ul {
 }
 
 body {
-  
+
   @media (min-width: 768px) {
     width: 75%;
   }
@@ -93,7 +117,7 @@ nav {
   .bottom-nav {
     background-color: #fff;
 
-    @include suitable(box-shadow,0 5px 16px -4px rgba(0, 0, 0, 0.36));
+    @include suitable(box-shadow, 0 5px 16px -4px rgba(0, 0, 0, 0.36));
 
     margin-left: 0;
 
@@ -102,11 +126,12 @@ nav {
       height: 70px;
       width: 70px;
     }
+
     ul {
 
       li {
         margin-right: 1vw;
-        
+
         .checked-page {
           color: $second-color;
         }
@@ -125,6 +150,7 @@ nav {
 
 main {
   font-family: $font-2;
+
   .map {
     padding-top: 10px;
     margin-right: 10px;
@@ -153,7 +179,8 @@ main {
       @include fz(20px);
 
       &::after {
-        @include after-line(); }
+        @include after-line();
+      }
     }
 
     h2 {
@@ -179,8 +206,7 @@ main {
       padding: $width-border;
       background-image:
         linear-gradient(0deg, $third-color, $third-color),
-        repeating-linear-gradient(
-          -45deg,
+        repeating-linear-gradient(-45deg,
           blue,
           blue 5px,
           white,
@@ -188,12 +214,9 @@ main {
           red,
           red 15px,
           white,
-          white 20px
-        );
-      background-size:
-        calc(100% - #{$width-border} * 2)
-        calc(100% - #{$width-border} * 2),
-        100% 100%;
+          white 20px);
+      background-size: calc(100% - #{$width-border} * 2) calc(100% - #{$width-border} * 2),
+      100% 100%;
       background-position: 50%, 50%;
       background-repeat: no-repeat;
       display: grid;
@@ -229,10 +252,10 @@ main {
         padding-top: 7px;
         margin: 0 auto;
 
-        @include suitable(transform,rotateZ(45deg));
+        @include suitable(transform, rotateZ(45deg));
 
         i {
-          @include suitable(transform,rotateZ(-45deg));
+          @include suitable(transform, rotateZ(-45deg));
         }
       }
 
@@ -270,7 +293,7 @@ main {
     }
   }
 
- 
+
 }
 
 .footer {
@@ -279,6 +302,7 @@ main {
   color: $third-color;
   padding-bottom: 50px;
   padding-top: 50px;
+
   a {
 
     img {
