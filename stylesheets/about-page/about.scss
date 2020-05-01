@@ -1,8 +1,9 @@
 $first-color: #272a21;
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
-$font-1: "Lato", sans-serif;
-$font-2: "COCOGOOSE", sans-serif;
+$font-1: "Lato", apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$font-2: "COCOGOOSE", apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
@@ -31,10 +32,10 @@ $font-2: "COCOGOOSE", sans-serif;
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
-    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
-    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
+  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
       format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
@@ -73,6 +74,7 @@ body {
 }
 
 nav {
+  font-family: $font-1;
   height: auto;
 
   .top-nav {
@@ -123,6 +125,7 @@ nav {
 }
 
 main {
+  font-family: $font-2;
   &::after {
     content: "";
     opacity: 1;
@@ -375,10 +378,12 @@ main {
 }
 
 .footer {
+
   @media (min-width: 768px) {
     background-color: $first-color;
     color: $third-color;
   }
+  font-family: $font-1;
 
   padding-bottom: 50px;
   padding-top: 50px;
