@@ -241,74 +241,6 @@ main .main-middle section .second-image {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("../../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
 }
 
-main .main-bottom {
-  background-color: #fff;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-main .main-bottom .title-main-bottom::after {
-  content: "";
-  display: block;
-  margin: 10px auto;
-  width: 40px;
-  background-color: #ec5242;
-  border: solid 1px #ec5242;
-}
-
-main .main-bottom section {
-  height: auto;
-  font-size: 0.875em;
-}
-
-main .main-bottom section .images-bottom {
-  height: auto;
-}
-
-main .main-bottom section .images-bottom .decoration-featured {
-  background-image: url("../../images/cross.svg");
-  background-repeat: repeat;
-  background-size: 10px;
-  height: 70px;
-  width: 70px;
-}
-
-@media (min-width: 768px) {
-  main .main-bottom section .images-bottom .decoration-featured {
-    background-image: url("../../images/cross-gray.svg");
-  }
-}
-
-main .main-bottom section .images-bottom img {
-  height: 150px;
-  width: 150px;
-  top: 15px;
-  left: 15px;
-}
-
-main .main-bottom section .information-bottom {
-  margin-left: 110px;
-}
-
-main .main-bottom section .information-bottom h1 {
-  font-weight: bold;
-  font-size: 1.625em;
-}
-
-main .main-bottom section .information-bottom h2 {
-  font-size: 1em;
-  font-style: italic;
-  color: #ec5242;
-}
-
-main .main-bottom section .information-bottom h2::after {
-  content: "";
-  display: block;
-  margin: 10px 0;
-  width: 40px;
-  border: solid 1px lightgray;
-}
-
 main .sponsors {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -332,10 +264,6 @@ main .sponsors .title-sponsors::after {
 main .sponsors a {
   font-size: 1.625em;
   margin: 0 10px;
-}
-
-main .sponsors a i {
-  font-size: 2.25em;
 }
 
 .footer {
