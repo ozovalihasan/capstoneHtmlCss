@@ -1,12 +1,32 @@
 $first-color: #272a21;
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
-$font-1: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-2: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-1: "Lato",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+$font-2: "COCOGOOSE",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
@@ -35,13 +55,10 @@ $font-2: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff")
-      format("woff"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
-      format("svg"),
+  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -263,11 +280,9 @@ main {
 
       .first-image {
         height: 300px;
-        background-image: linear-gradient(
-            to bottom,
+        background-image: linear-gradient(to bottom,
             rgba(255, 0, 0, 0.2),
-            rgba(255, 0, 0, 0.2)
-          ),
+            rgba(255, 0, 0, 0.2)),
           url("../../images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
         background-size: cover, cover;
         width: 100%;
@@ -280,11 +295,9 @@ main {
       .second-image {
         @extend .first-image;
 
-        background-image: linear-gradient(
-            to bottom,
+        background-image: linear-gradient(to bottom,
             rgba(255, 0, 0, 0.2),
-            rgba(255, 0, 0, 0.2)
-          ),
+            rgba(255, 0, 0, 0.2)),
           url("../../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
       }
     }
