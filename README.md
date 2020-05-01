@@ -17,7 +17,7 @@ In this Microverse project, I built a AIRSHOW website similar to [ conference we
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/aaeeb52415ed41a19ff0a0a9e60f3e48d970ad13/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/b6010c5e65aeaed36812e417269caf0c7ad18d51/index.html)
 
 ## Getting Started
 
