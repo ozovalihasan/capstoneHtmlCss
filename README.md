@@ -1,22 +1,23 @@
-# newsweek-clone
+# capstoneHtmlCss
 
 
-This is a Microverse project focusing on responsive design by using Bootstrap. It was developed as a requirement for Microverse HTML and CSS course.
+This is a Microverse project as capstone. It was developed as a requirement for Microverse HTML and CSS course.
 
-![screenshot](./images/app_screenshot.png)
+![screenshot](./images/app_screenshot.svg)
 
 Additional description about the project and its features.
-In this Microverse project, we made use classes provided by Bootstrap to make a clone of [ NewsWeek](https://www.newsweek.com/) page . 
+In this Microverse project, I built a AIRSHOW website similar to [ conference website](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) . 
 
 ## Built With
 
 - Html
 - CSS
-- JavaScript    
+- JavaScript 
+- SCSS   
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/newsweek-clone/65f88d1b32927ce3797f44b68adeb4230524d311/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/aaeeb52415ed41a19ff0a0a9e60f3e48d970ad13/index.html)
 
 ## Getting Started
 
@@ -54,9 +55,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Cindy Shin who provided [ original work](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- [Microverse](https://www.microverse.org/) because of helping to build this project
+- [unsplash](https://unsplash.com/) because of providing images
+- [zetafonts](http://www.zetafonts.com/cocogoose) because of providing COCOGOOSE font family
 
 ## 📝 License
 
