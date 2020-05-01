@@ -4,3 +4,5 @@ package-lock.json
 /stylesheets/about-page/about.css.map
 /stylesheets/ticket-page/ticket.scss
 /stylesheets/ticket-page/ticket.css.map
+/stylesheets/main.scss
+/stylesheets/main.css.map
