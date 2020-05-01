@@ -1,168 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/about-page/about.css" />
+    <link rel="icon" href="/images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/8c7f545978.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="stylesheets/reset.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/stylesheets/about-page/about.css" />
-  <link rel="icon" href="/images/icon.png" />
-  <script src="https://kit.fontawesome.com/8c7f545978.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</head>
-
-<body class="w-100">
-  <nav class="d-none d-md-block">
-    <div class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center">
-      <div class="icons ml-auto">
-        <a href="#">
-          <i class="h-2 fab fa-facebook-f"></i>
-        </a>
-        <a href="#">
-          <i class="h-2 fab fa-twitter"></i>
-        </a>
+  <body class="w-100">
+    <nav class="d-none d-md-block">
+      <div
+        id="top-nav"
+        class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center"
+      >
+        <div class="icons ml-auto">
+          <a href="#">
+            <i class="h-2 fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="h-2 fab fa-twitter"></i>
+          </a>
+        </div>
+        <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
+          <a href="#">
+            <li class="">Logout</li>
+          </a>
+          <a href="#">
+            <li class="">Mypage</li>
+          </a>
+          <a href="#">
+            <li class="">Türkçe</li>
+          </a>
+        </ul>
       </div>
-      <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
-        <a href="#">
-          <li class="">Logout</li>
+      <div
+        id="bottom-nav"
+        class="bottom-nav main-padding row w-100 align-items-center"
+      >
+        <a href="/index.html">
+          <img class=" logo" src="/images/logo.svg" alt="" />
         </a>
-        <a href="#">
-          <li class="">Mypage</li>
-        </a>
-        <a href="#">
-          <li class="">Turkish</li>
-        </a>
-      </ul>
-    </div>
-    <div class="bottom-nav main-padding row w-100 align-items-center">
-      <a href="/index.html">
-        <img class="logo" src="/images/logo.svg" alt="" />
-      </a>
-      <ul class="row ml-auto mb-0 align-items-center">
-        <li><a href="about.html" class="checked-page">About</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="ticket.html">Join</a></li>
-        <li><a href="#">Sponsor</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
-      <button class="bg-transparent">
-        CC Campaign
-      </button>
-    </div>
-  </nav>
-
-  <main class="position-relative text-center">
-
-    <div class="map d-none d-md-block main-padding">
-      <a href="/index.html">
-        <i class="fas fa-home"></i>
-      </a>
-      <i class="fas fa-chevron-right"></i>
-      About
-    </div>
-    <a href="#" class="">
-      <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
-    </a>
-    <div class="main-top main-padding">
-      <h1>
-        "Hello! Sharing World"
-      </h1>
-      <h2>
-        Creative Commons global summit
-      </h2>
-      <h3 class="my-5">
-        The Global Summit brings together the community of experts, academics,
-        and activists who comprise the Creative Commons affiliate network in a
-        different country every two. This year, we hope to expand our
-        invitation list including organizationsand individuals.
-      </h3>
-
-      <h4>
-        Please contact us per Email for any further questionsabout CC Global
-        Summit 2015!
-      </h4>
-      <h5>
-        ccsummitt2015@cckorea.org
-      </h5>
-    </div>
-    <div class="main-middle w-100 pb-2 ">
-      <section class="border-top-bold main-padding">
-        <h2 class="title-main-middle w-100 py-4 mx-auto text-center ">
-          Creative Commons Global Summit 2015 Logo
-        </h2>
-
-        <div class=" d-block">
-          The logo of CC Global Summit 2015 was decided through the logo
-          competition from 8. June to 7.July.
-        </div>
-        <img src="/images/cross.svg" alt="" />
-      </section>
-      <section class="main-padding">
-        <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
-          See the past CC Global Summits
-        </h2>
-
-        <div class=" d-block">
-          Take a look at the last two CC Global Summits which took place in
-          Buenos Aires and in Warsaw.
-        </div>
-        <div class="d-md-flex d-block">
-          <figure class="first-image d-flex">
-            <p> 2013</p>
-            <p>CC Global Summit 2013 in Buenos Aires </p>
-
-          </figure>
-          <figure class="second-image d-flex">
-            <p>
-              2011
-            </p>
-            <p>
-              CC Global Summit 2011 in Warsaw
-            </p>
-          </figure>
-        </div>
-
-
-      </section>
-    </div>
-
-    <div class="sponsors d-flex d-md-none flex-wrap main-padding">
-      <h1 class="w-100 mx-auto text-center">
-        Partner
-      </h1>
-      <div class="row w-100 justify-content-center align-items-center">
-        <a href="#">mozilla</a>
-        <a href="#" class="font-weight-light">Google</a>
-        <a href="#" class="font-weight-bolder">Naver</a>
-        <a href="#">daumkakao</a>
-        <a href="#" class="d-flex align-items-center">
-          <i class="fab fa-airbnb"></i>
-          airbnb
-        </a>
+        <ul class="row ml-auto mb-0 align-items-center">
+          <li><a href="about.html" class="checked-page">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="ticket.html">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <button class="bg-transparent">
+          AIRHOW Campaign
+        </button>
       </div>
-    </div>
-  </main>
-  <footer class="footer d-flex main-padding w-100 justify-content-center align-items-center">
-    <a href="/index.html">
-      <img src="/images/logo.svg" alt="" />
-    </a>
-    <div class="footer-text ml-3">
-      2020 Creative Commons Korea. Some Rights Reserved
-    </div>
-  </footer>
+    </nav>
 
-  <script src="/script.js"></script>
-</body>
+    <main class="position-relative text-center">
+      <div class="map d-none d-md-block main-padding">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+        </a>
+        <i class="fas fa-chevron-right"></i>
+        About
+      </div>
+      <a href="#" class="">
+        <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
+      </a>
+      <div class="main-top main-padding">
+        <h1>
+          "Hello! Connecting World"
 
+        </h1>
+        <h2>
+          AIRSHOW 2020
+
+        </h2>
+        <h3 class="my-5">
+          AIRSHOW brings together the community of experts and academics,
+          who working to make aviation industry safety. This year, we hope to expand our
+          invitation list including organizations .
+        </h3>
+
+        <h4>
+          Please contact us per Email for any further questions about AIRSHOW 2020!
+        </h4>
+        <h5>
+          airshow2020@hasanairlines.org
+        </h5>
+      </div>
+      <div class="main-middle w-100 pb-2">
+        <section class="border-top-bold main-padding">
+          <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
+            AIRSHOW 2020 Logo
+          </h2>
+
+          <div class="d-block">
+            The logo of AIRSHOW 2020 was decided through the logo
+            competition from 8. June to 7.July.
+          </div>
+          <img class="rounded-circle logo-middle" src="/images/logo.svg" alt="" />
+        </section>
+        <section class="main-padding">
+          <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
+            See the past AIRSHOW's
+          </h2>
+
+          <div class="d-block">
+            Take a look at the last two AIRSHOW which took place in
+            Buenos Aires and in Warsaw.
+          </div>
+          <div class="d-md-flex d-block">
+            <figure class="first-image d-flex">
+              <p>2018</p>
+              <p>AIRSHOW 2018 in Buenos Aires</p>
+            </figure>
+            <figure class="second-image d-flex">
+              <p>
+                2019
+              </p>
+              <p>
+                AIRSHOW 2019 in Warsaw
+              </p>
+            </figure>
+          </div>
+        </section>
+      </div>
+
+      <div class="sponsors d-none d-md-flex flex-wrap main-padding">
+        <h1 class="w-100 mx-auto text-center">
+          Partner
+        </h1>
+        <div class="row w-100 justify-content-center align-items-center">
+          <a href="#">Boeing</a>
+          <a href="#" class="font-weight-light">Airbus</a>
+          <a href="#" class="font-weight-bolder">Douglas</a>
+          <a href="#">Samsung</a>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer d-flex main-padding w-100 justify-content-center align-items-center"
+    >
+      <a href="/index.html">
+        <img  src="/images/logo2.svg" alt="" />
+      </a>
+      <div class="footer-text ml-3">
+        2020 Hasan Airlines. Some Rights Reserved
+      </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>

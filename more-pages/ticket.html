@@ -1,272 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket for AIRSHOW 2020</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/ticket-page/ticket.css" />
+    <link rel="icon" href="/images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/8c7f545978.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="stylesheets/reset.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/stylesheets/ticket-page/ticket.css" />
-  <link rel="icon" href="/images/icon.png" />
-  <script src="https://kit.fontawesome.com/8c7f545978.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</head>
-
-<body class="w-100">
-  <nav class="d-none d-md-block">
-    <div class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center">
-      <div class="icons ml-auto">
-        <a href="#">
-          <i class="h-2 fab fa-facebook-f"></i>
-        </a>
-        <a href="#">
-          <i class="h-2 fab fa-twitter"></i>
-        </a>
+  <body class="w-100">
+    <nav class="d-none d-md-block">
+      <div
+        id="top-nav"
+        class="top-nav main-padding d-none d-md-flex w-100 row m-0 align-items-center"
+      >
+        <div class="icons ml-auto">
+          <a href="#">
+            <i class="h-2 fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="h-2 fab fa-twitter"></i>
+          </a>
+        </div>
+        <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
+          <a href="#">
+            <li class="">Logout</li>
+          </a>
+          <a href="#">
+            <li class="">Mypage</li>
+          </a>
+          <a href="#">
+            <li class="">Türkçe</li>
+          </a>
+        </ul>
       </div>
-      <ul class="d-flex ml-2 mr-0 mb-0 row align-middle">
-        <a href="#">
-          <li class="">Logout</li>
+      <div
+        id="bottom-nav"
+        class="bottom-nav main-padding row w-100 align-items-center"
+      >
+        <a href="/index.html">
+          <img class="logo" src="/images/logo.svg" alt="" />
         </a>
-        <a href="#">
-          <li class="">Mypage</li>
-        </a>
-        <a href="#">
-          <li class="">Turkish</li>
-        </a>
-      </ul>
-    </div>
-    <div class="bottom-nav main-padding row w-100 align-items-center">
-      <a href="/index.html">
-        <img class="logo" src="/images/logo.svg" alt="" />
-      </a>
-      <ul class="row ml-auto mb-0 align-items-center">
-        <li><a href="about.html" >About</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="ticket.html" class="checked-page">Join</a></li>
-        <li><a href="#">Sponsor</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
-      <button class="bg-transparent">
-        CC Campaign
-      </button>
-    </div>
-  </nav>
-
-  <main class="position-relative text-center">
-
-    <div class="map d-none d-md-block main-padding">
-      <a href="/index.html">
-        <i class="fas fa-home"></i>
-      </a>
-      <i class="fas fa-chevron-right"></i>
-      Join
-    </div>
-    <a href="#" class="">
-      <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
-    </a>
-    <div class="steps step-1 main-padding">
-      <h1>
-        Select Tickets
-      </h1>
-      <h2>
-        STEP 1
-        <span>Please select the day when you want to join CC Global Summit 2015</span>
-
-      </h2>
-      <div class="table-ticket">
-        <div class="ticket">
-          Ticket
-        </div>
-        <div>
-          1-day Ticket
-        </div>
-        <div class="two-column">
-          2-day Ticket
-        </div>
-        <div>
-          CC Affiliate/Partners
-        </div>
-        <div>
-          Date
-        </div>
-        <div>
-          15. Oct <br>(Thu)
-        </div>
-        <div>
-          16. Oct <br>(Fri)
-        </div>
-        <div>
-          15.-16. Oct <br>(Thu-Fri)
-        </div>
-        <div>
-          15.-16. Oct <br>(Thu-Fri)
-        </div>
-        <div>
-          Normal
-        </div>
-        <div class="second-color font-weight-bold">
-          70 TL <br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          70 TL<br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          100 TL<br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          0 TL<br>
-          <input type="radio">
-        </div>
-        <div>
-          Students
-        </div>
-        <div class="second-color font-weight-bold">
-          30 TL<br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          30 TL<br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          50 TL<br>
-          <input type="radio">
-        </div>
-        <div class="second-color font-weight-bold">
-          0 TL<br>
-          <input type="radio">
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-
-    <div class="steps step-2 main-padding">
-      <div class="down-arrow">
-        <i class="fas fa-chevron-down"></i>
-      </div>
-      <h1 class="mt-5">
-        Select Your Lunch
-      </h1>
-      <h2>
-        STEP 2
-        <span>Please select your lunch for registered day. There will be no further costs for the lunch</span>
-
-      </h2>
-      <div class="table-menu">
-        <div class="name-menu">
-          Breakfast
-
-        </div>
-        <div class="menu first-menu d-flex justify-content-between ">
-          
-          <div >
-            <label>
-              Menu 1
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 2
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 3
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 4
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 5
-            </label>
-            <input type="radio">
-          </div>
-        </div>
-        <div class="name-menu">
-          Lunch
-
-        </div>
-        <div class="menu second-menu d-flex justify-content-between ">
-          
-          <div >
-            <label>
-              Menu 1
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 2
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 3
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 4
-            </label>
-            <input type="radio">
-          </div>
-          <div>
-            <label>
-              Menu 5
-            </label>
-            <input type="radio">
-          </div>
-        </div>
-        <button>
-          Buy Ticket
+        <ul class="row ml-auto mb-0 align-items-center">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="ticket.html" class="checked-page">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <button class="bg-transparent">
+          CC Campaign
         </button>
+      </div>
+    </nav>
 
-
+    <main class="position-relative text-center">
+      <div class="map d-none d-md-block main-padding">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+        </a>
+        <i class="fas fa-chevron-right"></i>
+        Join
+      </div>
+      <a href="#" class="">
+        <i class="d-md-none fas fa-bars mt-4 ml-5"></i>
+      </a>
+      <div class="steps step-1 main-padding">
+        <h1>
+          Select Tickets
+        </h1>
+        <h2>
+          STEP 1
+          <span>Please select the day when you want to join AIRSHOW 2020</span>
+        </h2>
+        <div class="table-ticket">
+          <div class="ticket">
+            Ticket
+          </div>
+          <div>
+            1-day Ticket
+          </div>
+          <div class="two-column">
+            2-day Ticket
+          </div>
+          <div>
+            AIRSHOW Affiliate/Partners
+          </div>
+          <div>
+            Date
+          </div>
+          <div>15. Oct <br />(Thu)</div>
+          <div>16. Oct <br />(Fri)</div>
+          <div>15.-16. Oct <br />(Thu-Fri)</div>
+          <div>15.-16. Oct <br />(Thu-Fri)</div>
+          <div>
+            Normal
+          </div>
+          <div class="second-color font-weight-bold">
+            70 TL <br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            70 TL<br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            100 TL<br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            0 TL<br />
+            <input type="radio" />
+          </div>
+          <div>
+            Students
+          </div>
+          <div class="second-color font-weight-bold">
+            30 TL<br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            30 TL<br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            50 TL<br />
+            <input type="radio" />
+          </div>
+          <div class="second-color font-weight-bold">
+            0 TL<br />
+            <input type="radio" />
+          </div>
+        </div>
       </div>
 
+      <div class="steps step-2 main-padding">
+        <div class="down-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <h1 class="mt-5">
+          Select Your Lunch
+        </h1>
+        <h2>
+          STEP 2
+          <span
+            >Please select your meals for events. There will be no further costs
+            for meals</span
+          >
+        </h2>
+        <div class="table-menu">
+          <div class="name-menu">
+            Breakfast
+          </div>
+          <div class="menu first-menu d-flex justify-content-between">
+            <div>
+              <label>
+                Menu 1
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 2
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 3
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 4
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 5
+              </label>
+              <input type="radio" />
+            </div>
+          </div>
+          <div class="name-menu">
+            Lunch
+          </div>
+          <div class="menu second-menu d-flex justify-content-between">
+            <div>
+              <label>
+                Menu 1
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 2
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 3
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 4
+              </label>
+              <input type="radio" />
+            </div>
+            <div>
+              <label>
+                Menu 5
+              </label>
+              <input type="radio" />
+            </div>
+          </div>
+          <button>
+            Buy Ticket
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer d-flex main-padding w-100 justify-content-center align-items-center"
+    >
+      <a href="/index.html">
+        <img src="/images/logo2.svg" alt="" />
+      </a>
+      <div class="footer-text ml-3">
+        2020 Hasan Airlines. Some Rights Reserved
+      </div>
+    </footer>
 
-    </div>
-
-
-
-  </main>
-  <footer class="footer d-flex main-padding w-100 justify-content-center align-items-center">
-    <a href="/index.html">
-      <img src="/images/logo.svg" alt="" />
-    </a>
-    <div class="footer-text ml-3">
-      2020 Creative Commons Korea. Some Rights Reserved
-    </div>
-  </footer>
-
-  <script src="/script.js"></script>
-</body>
-
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>

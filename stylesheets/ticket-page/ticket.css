@@ -54,14 +54,16 @@ nav .top-nav ul li {
   margin: 0 10px;
 }
 nav .bottom-nav {
+  background-color: #fff;
   -webkit-box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.36);
   margin-left: 0;
 }
 nav .bottom-nav img {
+  border-radius: 50%;
   height: 70px;
-  width: 50px;
+  width: 70px;
 }
 nav .bottom-nav li {
   margin-right: 2vw;

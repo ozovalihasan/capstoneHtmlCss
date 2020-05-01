@@ -1,4 +1,4 @@
-$first-color: #272a21;
+$first-color: rgb(39, 42, 33);
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
 $font-1: "Lato", sans-serif;
@@ -78,7 +78,6 @@ nav {
   .top-nav {
     background-color: $first-color;
     color: $third-color;
-
     i {
       margin: 5px 10px;
     }
@@ -91,13 +90,15 @@ nav {
   }
 
   .bottom-nav {
+    background-color: #fff;
     @include bs(0px 5px 16px -4px rgba(0, 0, 0, 0.36));
 
     margin-left: 0;
 
     img {
+      border-radius: 50%;
       height: 70px;
-      width: 50px;
+      width: 70px;
     }
 
     li {
@@ -147,7 +148,9 @@ main {
     }
 
     h2 {
-      background-image: url("/images/29942-gettyimages-155302141.jpg");
+      background-image: url("/images/alex-jekowsky-ujBbHxsGNH8-unsplash.jpg");
+      background-position: 50%;
+      background-size: 50px;
       color: transparent;
       @include bg-clip(text);
       @include fz(60px);
@@ -209,6 +212,9 @@ main {
         @media (min-width: 768px) {
           width: 100%;
           margin: 10px 0;
+        }
+        i {
+          @include fz(30px)
         }
       }
 
@@ -332,9 +338,7 @@ main {
       @include fz(26px);
       margin: 0 10px;
 
-      i {
-        @include fz(36px);
-      }
+    
     }
   }
 }
