@@ -2,31 +2,31 @@ $first-color: #272a21;
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
 $font-1: "Lato",
-apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
+  apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
 $font-2: "COCOGOOSE",
-apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
+  apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
@@ -49,7 +49,8 @@ sans-serif,
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+  src:
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
@@ -64,7 +65,6 @@ a {
 
   &:hover {
     color: darken($second-color, 20%);
-
     text-decoration: none;
   }
 }
@@ -87,7 +87,6 @@ ul {
 }
 
 body {
-
   @media (min-width: 768px) {
     width: 75%;
   }
@@ -128,7 +127,6 @@ nav {
     }
 
     ul {
-
       li {
         margin-right: 1vw;
 
@@ -206,7 +204,8 @@ main {
       padding: $width-border;
       background-image:
         linear-gradient(0deg, $third-color, $third-color),
-        repeating-linear-gradient(-45deg,
+        repeating-linear-gradient(
+          -45deg,
           blue,
           blue 5px,
           white,
@@ -214,9 +213,11 @@ main {
           red,
           red 15px,
           white,
-          white 20px);
-      background-size: calc(100% - #{$width-border} * 2) calc(100% - #{$width-border} * 2),
-      100% 100%;
+          white 20px
+        );
+      background-size:
+        calc(100% - #{$width-border} * 2) calc(100% - #{$width-border} * 2),
+        100% 100%;
       background-position: 50%, 50%;
       background-repeat: no-repeat;
       display: grid;
@@ -228,8 +229,6 @@ main {
         padding: 10px 0;
         background-color: #fff;
       }
-
-
 
       .two-column {
         grid-column-end: span 2;
@@ -292,8 +291,6 @@ main {
       }
     }
   }
-
-
 }
 
 .footer {
@@ -304,7 +301,6 @@ main {
   padding-top: 50px;
 
   a {
-
     img {
       background-color: $third-color;
       border-radius: 50%;
