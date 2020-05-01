@@ -134,7 +134,7 @@ main {
     right: 0;
     position: absolute;
     z-index: -1;
-    background-image: url("/images/background-2.svg");
+    background-image: url("images/background-2.svg");
     background-position: center 0;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@ main {
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
           ),
-          url("/images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
+          url("images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
         background-size: cover, cover;
         width: 100%;
 
@@ -279,7 +279,7 @@ main {
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
           ),
-          url("/images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
+          url("images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
       }
     }
   }
@@ -302,10 +302,10 @@ main {
         height: auto;
 
         .decoration-featured {
-          background-image: url("/images/cross.svg");
+          background-image: url("images/cross.svg");
 
           @media (min-width: 768px) {
-            background-image: url("/images/cross-gray.svg");
+            background-image: url("images/cross-gray.svg");
           }
 
           background-repeat: repeat;

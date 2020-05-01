@@ -134,7 +134,7 @@ main {
     right: 0;
     position: absolute;
     z-index: -1;
-    background-image: url("/images/background-1.svg");
+    background-image: url("images/background-1.svg");
     background-position: center 0;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ main {
     }
 
     h2 {
-      background-image: url("/images/alex-jekowsky-ujBbHxsGNH8-unsplash.jpg");
+      background-image: url("images/alex-jekowsky-ujBbHxsGNH8-unsplash.jpg");
       background-position: 50%;
       background-size: 50px;
       color: transparent;
@@ -195,7 +195,7 @@ main {
   }
 
   .main-middle {
-    background-image: url("/images/two-rect.svg");
+    background-image: url("images/two-rect.svg");
     background-size: 40px;
     background-repeat: repeat;
     color: $third-color;
