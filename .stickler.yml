@@ -7,3 +7,13 @@ linters:
 # if you need extra support from you linter - do it in your local env as described in README for this config
 
 # find full documentation here: https://stickler-ci.com/docs
+
+# Files below are ignored by stickler-ci
+files:
+  ignore:
+    - "stylesheets/about-page/about.scss"
+    - "stylesheets/about-page/about.css.map"
+    - "stylesheets/ticket-page/ticket.scss"
+    - "stylesheets/ticket-page/ticket.css.map"
+    - "stylesheets/main.scss"
+    - "stylesheets/main.css.map"
