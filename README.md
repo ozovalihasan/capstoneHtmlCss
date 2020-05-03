@@ -1,4 +1,4 @@
-# capstoneHtmlCss
+﻿# capstoneHtmlCss
 
 
 This is a Microverse project as capstone. It was developed as a requirement for Microverse HTML and CSS course.
@@ -17,7 +17,7 @@ In this Microverse project, I built a AIRSHOW website similar to [ conference we
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/2551f69510822f7f429e5577689780c7efd48b8c/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/eb46c927277a374a17ae1bb437b2617eaf2b9c0d/index.html)
 
 [Video presentation of this project ](https://www.loom.com/share/c14c68609a3c4800830e9c5ada36201b)
 
