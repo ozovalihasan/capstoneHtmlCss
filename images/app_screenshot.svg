@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35628511"
-     inkscape:cx="237.26008"
-     inkscape:cy="738.24559"
+     inkscape:zoom="0.35178249"
+     inkscape:cx="386.72477"
+     inkscape:cy="217.6064"
      inkscape:document-units="mm"
      inkscape:current-layer="layer7"
      showgrid="false"
@@ -55,50 +55,51 @@
   <g
      inkscape:groupmode="layer"
      id="layer7"
-     inkscape:label="Layer 4">
+     inkscape:label="Layer 4"
+     style="display:inline">
     <path
        style="fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 52.637757,-8.18194 241.71964,-12.368141 V 271.0975 L 96.420353,247.17634 V 167.04049 L 52.637757,91.20681 V -8.18194"
+       d="M 52.637757,-2.3611063 241.71964,-6.5473061 V 276.91837 L 96.420353,252.99721 V 172.86136 L 52.637757,97.027647 V -2.3611063"
        id="path3486"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:#ec5242;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 96.420347,304.17634 V 224.04048 L 52.637757,148.20681 V 48.818056 l -89.715541,4e-6 v 257.7504 z"
+       d="M 96.420347,252.99721 V 172.86135 L 52.637757,97.027647 V -2.3611103 l -89.715541,4e-6 V 255.38933 Z"
        id="path3486-9"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc"
-       transform="translate(0,-57)" />
+       sodipodi:nodetypes="ccccccc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.91246128px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0.24781151;stroke-opacity:1"
        x="2.5435035"
-       y="104.43935"
+       y="110.26019"
        id="text3553"><tspan
          sodipodi:role="line"
          id="tspan3551"
          x="2.5435035"
-         y="104.43935"
+         y="110.26019"
          style="fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0.24781151;stroke-opacity:1">Mobile</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ec5242;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="60.996704"
-       y="3.4341469"
+       y="9.2549791"
        id="text3607"><tspan
          sodipodi:role="line"
          id="tspan3605"
          x="60.996704"
-         y="3.4341469"
+         y="9.2549791"
          style="fill:#ec5242;fill-opacity:1;stroke-width:0.26458332">Laptop</tspan></text>
   </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-57)">
+     transform="translate(0,-57)"
+     sodipodi:insensitive="true">
     <image
-       y="163.70604"
+       y="169.52679"
        x="3.5115173"
        id="image3409"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqMAAAU8CAIAAACPagsnAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
@@ -3165,7 +3166,7 @@ L168eIPy/h809gU3aMJkdAAAAABJRU5ErkJggg==
        height="62.548363"
        width="31.507574" />
     <image
-       y="62.731369"
+       y="68.552208"
        x="61.992828"
        id="image3475"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAWtCAIAAACGDpyfAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
@@ -8705,9 +8706,10 @@ AABAEwgBAAAAAACgCYQAAAAAAADQhP8PLBMabmLgatoAAAAASUVORK5CYII=
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     inkscape:label="Layer 2"
+     sodipodi:insensitive="true">
     <image
-       y="25.523287"
+       y="31.344126"
        x="90.893745"
        id="image3442"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAo5CAIAAAD2sbgjAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
@@ -20192,7 +20194,7 @@ wwAAAABJRU5ErkJggg==
        height="122.15604"
        width="63.76199" />
     <image
-       y="130.01639"
+       y="135.83714"
        x="22.906296"
        id="image3453"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqMAAAi6CAIAAAAmVJ0iAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
@@ -32621,9 +32623,10 @@ IMsQ6QEAALLs/weKT8OS56ui0gAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Layer 3">
+     inkscape:label="Layer 3"
+     sodipodi:insensitive="true">
     <image
-       y="55.337555"
+       y="61.158394"
        x="142.37404"
        id="image3420"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAX6CAIAAACXhaTQAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
@@ -33928,7 +33931,7 @@ AAAAiIIIAAAAAKIgAgAAAIAoiAAAAAAgCiIAAAAAiML/D77WYz6p5OH2AAAAAElFTkSuQmCC
        height="71.417168"
        width="63.76199" />
     <image
-       y="152.06931"
+       y="157.89006"
        x="46.85334"
        id="image3464"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqMAAAW+CAIAAADcEr70AAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
