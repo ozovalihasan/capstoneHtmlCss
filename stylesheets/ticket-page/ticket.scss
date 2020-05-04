@@ -173,7 +173,7 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    h1 {
+    h2 {
       @include fz(20px);
 
       &::after {
@@ -181,7 +181,7 @@ main {
       }
     }
 
-    h2 {
+    h3 {
       @include fz(16px);
 
       border: solid $third-color 1px;

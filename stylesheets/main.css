@@ -299,10 +299,10 @@ main .sponsors {
   background-color: #414246;
   color: lightgray;
 }
-main .sponsors h1 {
+main .sponsors h2 {
   font-size: 1.375em;
 }
-main .sponsors h1::after {
+main .sponsors h2::after {
   content: "";
   display: block;
   margin: 10px auto;

@@ -398,7 +398,7 @@ main {
     background-color: #414246;
     color: $third-color;
 
-    h1 {
+    h2 {
       @include fz(22px);
 
       &::after {
