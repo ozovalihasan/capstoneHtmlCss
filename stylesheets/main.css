@@ -196,7 +196,6 @@ main .main-middle .title-main-middle::after {
 }
 main .main-middle .section {
   background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
 }
 @media (min-width: 768px) {
   main .main-middle .section {
@@ -225,27 +224,27 @@ main .main-middle .section a {
 main .main-middle .section p {
   color: lightgray;
   font-size: min(1.4em, 2.7vw);
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.15vw;
 }
-main .main-middle .section button {
+main .main-middle button {
   background-color: #ec5242;
   color: lightgray;
   font-size: 1.625em;
 }
-main .main-middle .section button:hover {
+main .main-middle button:hover {
   color: #b62212;
   text-decoration: none;
 }
-main .main-middle .featured-speakers {
+main .featured-speakers {
   padding-top: 20px;
   background-color: #fff;
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-main .main-middle .featured-speakers h2 {
+main .featured-speakers h2 {
   text-align: center;
   width: 100%;
 }
-main .main-middle .featured-speakers h2::after {
+main .featured-speakers h2::after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -253,33 +252,33 @@ main .main-middle .featured-speakers h2::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
-main .main-middle .featured-speakers .featured-container {
+main .featured-speakers .featured-container {
   padding: 20px 0 60px;
   display: block;
   flex-wrap: wrap;
 }
 @media (min-width: 768px) {
-  main .main-middle .featured-speakers .featured-container {
+  main .featured-speakers .featured-container {
     display: flex;
   }
 }
-main .main-middle .featured-speakers .featured-container .one-row {
+main .featured-speakers .featured-container .one-row {
   width: 100%;
   padding-top: 20px;
   margin-top: 10px;
   display: none;
 }
 @media (min-width: 768px) {
-  main .main-middle .featured-speakers .featured-container .one-row {
+  main .featured-speakers .featured-container .one-row {
     display: flex;
     width: 50%;
   }
 }
-main .main-middle .featured-speakers .featured-container .one-row .images {
+main .featured-speakers .featured-container .one-row .images {
   width: 110px;
   position: relative;
 }
-main .main-middle .featured-speakers .featured-container .one-row .images .img-decoration {
+main .featured-speakers .featured-container .one-row .images .img-decoration {
   position: absolute;
   background-image: url("../images/cross.svg");
   background-size: 10px 10px;
@@ -288,11 +287,11 @@ main .main-middle .featured-speakers .featured-container .one-row .images .img-d
   height: 50px;
 }
 @media (min-width: 768px) {
-  main .main-middle .featured-speakers .featured-container .one-row .images .img-decoration {
+  main .featured-speakers .featured-container .one-row .images .img-decoration {
     background-image: url("../images/cross-gray.svg");
   }
 }
-main .main-middle .featured-speakers .featured-container .one-row .images .img-speaker {
+main .featured-speakers .featured-container .one-row .images .img-speaker {
   position: relative;
   top: 10px;
   left: 10px;
@@ -300,25 +299,25 @@ main .main-middle .featured-speakers .featured-container .one-row .images .img-s
   height: 100px;
   margin-right: 20px;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information {
+main .featured-speakers .featured-container .one-row .speakers-information {
   margin-top: 10px;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information > * {
+main .featured-speakers .featured-container .one-row .speakers-information > * {
   margin-bottom: 0;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-name {
+main .featured-speakers .featured-container .one-row .speakers-information .speaker-name {
   font-size: 1.25em;
   font-weight: 700;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-title {
+main .featured-speakers .featured-container .one-row .speakers-information .speaker-title {
   color: #ec5242;
   font-style: italic;
   font-size: 0.875em;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-title::after {
+main .featured-speakers .featured-container .one-row .speakers-information .speaker-title::after {
   content: "";
   display: block;
   width: 20px;
@@ -326,22 +325,22 @@ main .main-middle .featured-speakers .featured-container .one-row .speakers-info
   border: solid 1px lightgray;
   margin: 5px 0;
 }
-main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-explanation {
+main .featured-speakers .featured-container .one-row .speakers-information .speaker-explanation {
   font-size: 0.75em;
 }
-main .main-middle .featured-speakers .featured-container .display-mobile {
+main .featured-speakers .featured-container .display-mobile {
   display: flex;
 }
-main .main-middle .sponsors {
+main .sponsors {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #414246;
   color: lightgray;
 }
-main .main-middle .sponsors h2 {
+main .sponsors h2 {
   font-size: 1.375em;
 }
-main .main-middle .sponsors h2::after {
+main .sponsors h2::after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -349,16 +348,17 @@ main .main-middle .sponsors h2::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
-main .main-middle .sponsors div .name-sponsor {
+main .sponsors div .name-sponsor {
   font-size: 1.625em;
   margin: 0 10px;
 }
-main .footer {
+
+.footer {
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-bottom: 50px;
   padding-top: 50px;
 }
-main .footer a img {
+.footer a img {
   background-color: lightgray;
   border-radius: 50%;
   height: 60px;

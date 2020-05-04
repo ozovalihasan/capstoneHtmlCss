@@ -2,12 +2,13 @@
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+  src:
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
     url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
-      format("svg"),
+    format("svg"),
     url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
     url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -59,7 +60,7 @@ body {
     ul {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
       li {
         margin-right: 1vw;
@@ -75,38 +76,36 @@ body {
     }
   }
 }
-
 .menu-button {
-  z-index: 1;
+  z-index:1;
   border: 0;
-  padding: 5px;
-  margin: 0;
-  position: relative;
-  background-color: transparent;
-
-  &:focus,
-  &:hover {
-    outline: none;
-  }
-
-  .fa-bars {
-    font-size: 200%;
-    color: transparent;
-    background-image: linear-gradient(to right, $third-color, $first-color);
-
-    @include bg-clip(text);
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    background-color: transparent;
 
     &:focus,
     &:hover {
+      outline: none;
+    }
+
+    .fa-bars {
+      font-size: 200%;
       color: transparent;
+      background-image: linear-gradient(to right, $third-color, $first-color);
 
       @include bg-clip(text);
 
-      background-image: linear-gradient(to left, $third-color, $first-color);
+      &:focus,
+      &:hover {
+        color: transparent;
+
+        @include bg-clip(text);
+
+        background-image: linear-gradient(to left, $third-color, $first-color);
+      }
     }
   }
-}
-
 main {
   font-family: $font-2;
 
@@ -124,6 +123,8 @@ main {
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
+  
 
   .main-top {
     color: darken($third-color, 30%);
@@ -192,7 +193,8 @@ main {
 
     .section {
       background-color: rgba(256, 256, 256, 0.2);
-      width: 100%;
+
+
       @media (min-width: 768px) {
         margin: 0;
         padding: 0;
@@ -214,15 +216,15 @@ main {
 
       a {
         font-weight: 600;
-        font-size: min(1.7em, 3.3vw);
+        font-size: min(1.7em,3.3vw);
         color: $second-color;
       }
 
       p {
         color: $third-color;
-        font-size: min(1.4em, 2.7vw);
-        letter-spacing: -0.1vw;
-        
+        font-size: min(1.4em,2.7vw);
+        letter-spacing: -.15vw;
+      }
     }
 
     button {
@@ -381,5 +383,4 @@ main {
       width: 60px;
     }
   }
-}
 }
