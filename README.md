@@ -22,7 +22,7 @@ Elements are aligned by using grids and flexboxes. To generate CSS code, a CSS p
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/2f18a996b98f965e1d56dfb4b3259ac2cbcd551d/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/b84519cd89221400794f5ba4ce5492e3aef404e9/index.html)
 
 [Video presentation of this project ](https://www.loom.com/share/c14c68609a3c4800830e9c5ada36201b)
 
