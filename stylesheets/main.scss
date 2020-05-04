@@ -41,6 +41,7 @@ body {
   }
 
   .bottom-nav {
+    padding-top: 10px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -52,6 +53,8 @@ body {
     margin-left: 0;
 
     img {
+      margin-top: 10px;
+      margin-bottom: 10px;
       border-radius: 50%;
       height: 70px;
       width: 70px;
@@ -227,7 +230,7 @@ main {
       }
     }
 
-    button {
+    .main-middle-button {
       background-color: $second-color;
       color: $third-color;
 
@@ -376,7 +379,7 @@ main {
   padding-top: 50px;
 
   a {
-    img {
+    .footer-logo {
       background-color: $third-color;
       border-radius: 50%;
       height: 60px;
