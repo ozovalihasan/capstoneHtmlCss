@@ -26,7 +26,7 @@ ul {
 }
 
 .deactive:hover {
-  color: lightgray;
+  color: #a0a0a0;
 }
 
 @font-face {
@@ -44,21 +44,21 @@ body {
   }
 }
 
-nav {
+.nav-bar {
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   height: auto;
 }
-nav .top-nav {
+.nav-bar .top-nav {
   background-color: #272a21;
   color: lightgray;
 }
-nav .top-nav i {
+.nav-bar .top-nav i {
   margin: 5px 10px;
 }
-nav .top-nav ul li {
+.nav-bar .top-nav ul li {
   margin: 0 10px;
 }
-nav .bottom-nav {
+.nav-bar .bottom-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -68,20 +68,20 @@ nav .bottom-nav {
   box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
   margin-left: 0;
 }
-nav .bottom-nav img {
+.nav-bar .bottom-nav img {
   border-radius: 50%;
   height: 70px;
   width: 70px;
 }
-nav .bottom-nav ul {
+.nav-bar .bottom-nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-nav .bottom-nav ul li {
+.nav-bar .bottom-nav ul li {
   margin-right: 1vw;
 }
-nav .bottom-nav button {
+.nav-bar .bottom-nav button {
   color: #ec5242;
   border: 4px solid #ec5242;
   margin: 10px;

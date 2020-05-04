@@ -17,12 +17,7 @@
   color: $second-color;
 }
 
-.deactive {
-  &:hover {
 
-    color: $third-color;
-  }
-}
 
 body {
   @media (min-width: 768px) {
@@ -32,7 +27,7 @@ body {
   width: 100%;
 }
 
-nav {
+.nav-bar {
   font-family: $font-1;
   height: auto;
 
@@ -215,6 +210,8 @@ main {
         width: 40px;
         padding-top: 7px;
         margin: 0 auto;
+        position: relative;
+        top: -20px;
 
         @include suitable(transform, rotateZ(45deg));
 
@@ -232,7 +229,7 @@ main {
       }
 
       .first-menu {
-        @include fz(20px);
+        @include fz(16px);
 
         padding: 1vw;
         width: 100%;
