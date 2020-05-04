@@ -73,11 +73,42 @@ nav {
       margin: 10px;
       padding: 3px 10px;
       margin-right: 0;
-     
+    }
+  }
+  
+}
+
+.menu-button {
+  z-index:1;
+  text-align: left;
+  border: 0;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  .fa-bars {
+    font-size: 200%;
+    color: transparent;
+    background-image: linear-gradient(to right, $third-color, $first-color);
+
+    @include bg-clip(text);
+
+    &:focus,
+    &:hover {
+      color: transparent;
+
+      @include bg-clip(text);
+
+      background-image: linear-gradient(to left, $third-color, $first-color);
     }
   }
 }
-
 main {
   font-family: $font-2;
 
@@ -91,40 +122,13 @@ main {
     }
   }
 
-  button {
-    border: 0;
-    padding: 5px;
-    margin: 0;
-    position: relative;
-    
-    background-color: transparent;
-    &:focus,    
-    &:hover {
-      outline: none;
-    }
-    
-    .fa-bars {
-      font-size: 200%;
-      color: transparent;
-      background-image: linear-gradient(to right, $third-color, $first-color);
-      @include bg-clip(text);
-      &:focus,    
-      &:hover {
-      color: transparent;
-      @include bg-clip(text);
-      background-image: linear-gradient(to left, $third-color, $first-color);
-
-      }
-    }
-    
-  }
-
   .steps {
     color: darken($third-color, 30%);
     padding-top: 60px;
     padding-bottom: 60px;
 
-    h1,h2 {
+    h1,
+    h2 {
       @include fz(20px);
 
       &::after {
@@ -153,8 +157,7 @@ main {
       $width-border: 10px;
 
       padding: $width-border;
-      background-image:
-        linear-gradient(0deg, $third-color, $third-color),
+      background-image: linear-gradient(0deg, $third-color, $third-color),
         repeating-linear-gradient(
           -45deg,
           blue,
@@ -166,8 +169,8 @@ main {
           white,
           white 20px
         );
-      background-size:
-        calc(100% - #{$width-border} * 2) calc(100% - #{$width-border} * 2),
+      background-size: calc(100% - #{$width-border} * 2)
+          calc(100% - #{$width-border} * 2),
         100% 100%;
       background-position: 50%, 50%;
       background-repeat: no-repeat;
@@ -239,6 +242,7 @@ main {
         width: 200px;
         margin: 20px;
         padding: 20px;
+
         &:hover {
           color: darken($second-color, 20%);
           text-decoration: none;

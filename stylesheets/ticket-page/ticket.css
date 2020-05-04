@@ -84,6 +84,34 @@ nav .bottom-nav button {
   margin-right: 0;
 }
 
+.menu-button {
+  z-index: 1;
+  text-align: left;
+  border: 0;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+}
+.menu-button:focus, .menu-button:hover {
+  outline: none;
+}
+.menu-button .fa-bars {
+  font-size: 200%;
+  color: transparent;
+  background-image: linear-gradient(to right, lightgray, #272a21);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.menu-button .fa-bars:focus, .menu-button .fa-bars:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to left, lightgray, #272a21);
+}
+
 main {
   font-family: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -95,40 +123,17 @@ main .map {
 main .map .fa-chevron-right {
   color: #ec5242;
 }
-main button {
-  border: 0;
-  padding: 5px;
-  margin: 0;
-  position: relative;
-  background-color: transparent;
-}
-main button:focus, main button:hover {
-  outline: none;
-}
-main button .fa-bars {
-  font-size: 200%;
-  color: transparent;
-  background-image: linear-gradient(to right, lightgray, #272a21);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-}
-main button .fa-bars:focus, main button .fa-bars:hover {
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(to left, lightgray, #272a21);
-}
 main .steps {
   color: #878787;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-main .steps h1, main .steps h2 {
+main .steps h1,
+main .steps h2 {
   font-size: 1.25em;
 }
-main .steps h1::after, main .steps h2::after {
+main .steps h1::after,
+main .steps h2::after {
   content: "";
   display: block;
   margin: 10px auto;

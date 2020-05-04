@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff")
-      format("woff"),
+  src:
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff")
+    format("woff"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
-      format("svg"),
+    format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -73,6 +74,36 @@ nav {
   }
 }
 
+.menu-button {
+  z-index:1;
+  border: 0;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    .fa-bars {
+      font-size: 200%;
+      color: transparent;
+      background-image: linear-gradient(to right, $third-color, $first-color);
+
+      @include bg-clip(text);
+
+      &:focus,
+      &:hover {
+        color: transparent;
+
+        @include bg-clip(text);
+
+        background-image: linear-gradient(to left, $third-color, $first-color);
+      }
+    }
+  }
 main {
   font-family: $font-2;
 
@@ -101,33 +132,7 @@ main {
     }
   }
 
-  button {
-    border: 0;
-    padding: 5px;
-    margin: 0;
-    position: relative;
-    
-    background-color: transparent;
-    &:focus,    
-    &:hover {
-      outline: none;
-    }
-    
-    .fa-bars {
-      font-size: 200%;
-      color: transparent;
-      background-image: linear-gradient(to right, $third-color, $first-color);
-      @include bg-clip(text);
-      &:focus,    
-      &:hover {
-      color: transparent;
-      @include bg-clip(text);
-      background-image: linear-gradient(to left, $third-color, $first-color);
-
-      }
-    }
-    
-  }
+  
 
   .main-top {
     color: darken($third-color, 30%);
@@ -225,7 +230,8 @@ main {
 
       .first-image {
         height: 300px;
-        background-image: linear-gradient(
+        background-image:
+          linear-gradient(
             to bottom,
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
@@ -242,7 +248,8 @@ main {
       .second-image {
         @extend .first-image;
 
-        background-image: linear-gradient(
+        background-image:
+          linear-gradient(
             to bottom,
             rgba(255, 0, 0, 0.2),
             rgba(255, 0, 0, 0.2)
@@ -252,7 +259,7 @@ main {
     }
   }
 
- 
+
 
   .sponsors {
     padding-top: 20px;
@@ -272,8 +279,6 @@ main {
       @include fz(26px);
 
       margin: 0 10px;
-
-  
     }
   }
 }
@@ -285,7 +290,6 @@ main {
   }
 
   font-family: $font-1;
-
   padding-bottom: 50px;
   padding-top: 50px;
 
