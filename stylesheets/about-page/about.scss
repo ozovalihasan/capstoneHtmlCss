@@ -42,6 +42,10 @@ nav {
   }
 
   .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
     background-color: #fff;
 
     @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
@@ -55,12 +59,12 @@ nav {
     }
 
     ul {
+      display: flex;
+      flex-direction: row;
+    flex-wrap: nowrap;
+
       li {
         margin-right: 1vw;
-
-        .checked-page {
-          color: $second-color;
-        }
       }
     }
 

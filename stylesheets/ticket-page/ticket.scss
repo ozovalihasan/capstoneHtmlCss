@@ -17,6 +17,13 @@
   color: $second-color;
 }
 
+.deactive {
+  &:hover {
+
+    color: $third-color;
+  }
+}
+
 body {
   @media (min-width: 768px) {
     width: 75%;
@@ -45,9 +52,13 @@ nav {
   }
 
   .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
     background-color: #fff;
 
-    @include suitable(box-shadow, 0 5px 16px -4px rgba(0, 0, 0, 0.36));
+    @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
 
     margin-left: 0;
 
@@ -58,12 +69,12 @@ nav {
     }
 
     ul {
+      display: flex;
+      flex-direction: row;
+    flex-wrap: nowrap;
+
       li {
         margin-right: 1vw;
-
-        .checked-page {
-          color: $second-color;
-        }
       }
     }
 
