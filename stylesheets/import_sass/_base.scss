@@ -65,6 +65,10 @@ ul {
   }
 }
 
+.second-color {
+  color: $second-color;
+}
+
 .deactive {
   &:hover {
     color: darken($third-color, 20%);

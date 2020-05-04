@@ -10,9 +10,7 @@
   font-style: normal;
 }
 
-.second-color {
-  color: $second-color;
-}
+
 
 body {
   @media (min-width: 768px) {
@@ -260,7 +258,7 @@ main {
   padding-top: 50px;
 
   a {
-    img {
+    .footer-image {
       background-color: $third-color;
       border-radius: 50%;
       height: 60px;

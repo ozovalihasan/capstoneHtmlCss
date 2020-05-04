@@ -25,6 +25,10 @@ ul {
   }
 }
 
+.second-color {
+  color: #ec5242;
+}
+
 .deactive:hover {
   color: #a0a0a0;
 }
@@ -35,10 +39,6 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-.second-color {
-  color: #ec5242;
-}
-
 body {
   width: 100%;
 }
@@ -241,7 +241,7 @@ main .steps.step-2 button:hover {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.footer a img {
+.footer a .footer-image {
   background-color: lightgray;
   border-radius: 50%;
   height: 60px;
