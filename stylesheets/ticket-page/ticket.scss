@@ -173,7 +173,7 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    h2 {
+    h1,h2 {
       @include fz(20px);
 
       &::after {

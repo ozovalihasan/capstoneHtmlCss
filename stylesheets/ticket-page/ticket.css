@@ -102,10 +102,10 @@ main .steps {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-main .steps h2 {
+main .steps h1, main .steps h2 {
   font-size: 1.25em;
 }
-main .steps h2::after {
+main .steps h1::after, main .steps h2::after {
   content: "";
   display: block;
   margin: 10px auto;
