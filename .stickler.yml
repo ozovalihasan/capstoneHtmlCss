@@ -17,3 +17,4 @@ files:
     - "stylesheets/ticket-page/ticket.css.map"
     - "stylesheets/main.scss"
     - "stylesheets/main.css.map"
+    - "stylesheets/import_sass/*"
