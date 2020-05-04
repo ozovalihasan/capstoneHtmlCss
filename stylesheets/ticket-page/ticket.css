@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@font-face {
-  font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
 a {
   color: inherit;
 }
 a:hover {
   color: #b62212;
   text-decoration: none;
+}
+
+.darken-hover:hover {
+  color: #e42a17;
 }
 
 ul {
@@ -23,10 +21,16 @@ ul {
 }
 @media (min-width: 768px) {
   .main-padding {
-    padding: 0 15% 0 10%;
+    padding: 0 15%;
   }
 }
 
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .second-color {
   color: #ec5242;
 }

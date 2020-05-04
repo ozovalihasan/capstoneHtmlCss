@@ -31,6 +31,12 @@ ul {
   }
 }
 
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   width: 100%;
 }

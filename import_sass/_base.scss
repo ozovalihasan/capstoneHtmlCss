@@ -1,0 +1,88 @@
+$first-color: rgb(39, 42, 33);
+$second-color: rgb(236, 82, 66);
+$third-color: rgb(211, 211, 211);
+$font-1: "Lato",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+$font-2: "COCOGOOSE",
+apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+@mixin fz($size) {
+  font-size: ($size/16px) * 1em;
+}
+
+@mixin suitable($value, $value2) {
+    -webkit-#{$value}: $value2;
+    -moz-#{$value}: $value2;
+    #{$value}: $value2;
+  }
+
+@mixin bg-clip($value) {
+    @include suitable(background-clip,$value )
+}
+
+@mixin bs($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin after-line {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  background-color: $second-color;
+  border: solid 1px $second-color;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: darken($second-color, 20%);
+    text-decoration: none;
+  }
+}
+
+.darken-hover:hover {
+  color: darken($second-color, 10%);
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.main-padding {
+  padding: 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 0 15%;
+  }
+}
