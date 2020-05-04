@@ -196,6 +196,7 @@ main .main-middle .title-main-middle::after {
 }
 main .main-middle .section {
   background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
 }
 @media (min-width: 768px) {
   main .main-middle .section {
@@ -224,26 +225,27 @@ main .main-middle .section a {
 main .main-middle .section p {
   color: lightgray;
   font-size: min(1.4em, 2.7vw);
+  letter-spacing: -0.1vw;
 }
-main .main-middle button {
+main .main-middle .section button {
   background-color: #ec5242;
   color: lightgray;
   font-size: 1.625em;
 }
-main .main-middle button:hover {
+main .main-middle .section button:hover {
   color: #b62212;
   text-decoration: none;
 }
-main .featured-speakers {
+main .main-middle .featured-speakers {
   padding-top: 20px;
   background-color: #fff;
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-main .featured-speakers h2 {
+main .main-middle .featured-speakers h2 {
   text-align: center;
   width: 100%;
 }
-main .featured-speakers h2::after {
+main .main-middle .featured-speakers h2::after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -251,33 +253,33 @@ main .featured-speakers h2::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
-main .featured-speakers .featured-container {
+main .main-middle .featured-speakers .featured-container {
   padding: 20px 0 60px;
   display: block;
   flex-wrap: wrap;
 }
 @media (min-width: 768px) {
-  main .featured-speakers .featured-container {
+  main .main-middle .featured-speakers .featured-container {
     display: flex;
   }
 }
-main .featured-speakers .featured-container .one-row {
+main .main-middle .featured-speakers .featured-container .one-row {
   width: 100%;
   padding-top: 20px;
   margin-top: 10px;
   display: none;
 }
 @media (min-width: 768px) {
-  main .featured-speakers .featured-container .one-row {
+  main .main-middle .featured-speakers .featured-container .one-row {
     display: flex;
     width: 50%;
   }
 }
-main .featured-speakers .featured-container .one-row .images {
+main .main-middle .featured-speakers .featured-container .one-row .images {
   width: 110px;
   position: relative;
 }
-main .featured-speakers .featured-container .one-row .images .img-decoration {
+main .main-middle .featured-speakers .featured-container .one-row .images .img-decoration {
   position: absolute;
   background-image: url("../images/cross.svg");
   background-size: 10px 10px;
@@ -286,11 +288,11 @@ main .featured-speakers .featured-container .one-row .images .img-decoration {
   height: 50px;
 }
 @media (min-width: 768px) {
-  main .featured-speakers .featured-container .one-row .images .img-decoration {
+  main .main-middle .featured-speakers .featured-container .one-row .images .img-decoration {
     background-image: url("../images/cross-gray.svg");
   }
 }
-main .featured-speakers .featured-container .one-row .images .img-speaker {
+main .main-middle .featured-speakers .featured-container .one-row .images .img-speaker {
   position: relative;
   top: 10px;
   left: 10px;
@@ -298,25 +300,25 @@ main .featured-speakers .featured-container .one-row .images .img-speaker {
   height: 100px;
   margin-right: 20px;
 }
-main .featured-speakers .featured-container .one-row .speakers-information {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information {
   margin-top: 10px;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
 }
-main .featured-speakers .featured-container .one-row .speakers-information > * {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information > * {
   margin-bottom: 0;
 }
-main .featured-speakers .featured-container .one-row .speakers-information .speaker-name {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-name {
   font-size: 1.25em;
   font-weight: 700;
 }
-main .featured-speakers .featured-container .one-row .speakers-information .speaker-title {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-title {
   color: #ec5242;
   font-style: italic;
   font-size: 0.875em;
 }
-main .featured-speakers .featured-container .one-row .speakers-information .speaker-title::after {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-title::after {
   content: "";
   display: block;
   width: 20px;
@@ -324,22 +326,22 @@ main .featured-speakers .featured-container .one-row .speakers-information .spea
   border: solid 1px lightgray;
   margin: 5px 0;
 }
-main .featured-speakers .featured-container .one-row .speakers-information .speaker-explanation {
+main .main-middle .featured-speakers .featured-container .one-row .speakers-information .speaker-explanation {
   font-size: 0.75em;
 }
-main .featured-speakers .featured-container .display-mobile {
+main .main-middle .featured-speakers .featured-container .display-mobile {
   display: flex;
 }
-main .sponsors {
+main .main-middle .sponsors {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #414246;
   color: lightgray;
 }
-main .sponsors h2 {
+main .main-middle .sponsors h2 {
   font-size: 1.375em;
 }
-main .sponsors h2::after {
+main .main-middle .sponsors h2::after {
   content: "";
   display: block;
   margin: 10px auto;
@@ -347,17 +349,16 @@ main .sponsors h2::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
-main .sponsors div .name-sponsor {
+main .main-middle .sponsors div .name-sponsor {
   font-size: 1.625em;
   margin: 0 10px;
 }
-
-.footer {
+main .footer {
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.footer a img {
+main .footer a img {
   background-color: lightgray;
   border-radius: 50%;
   height: 60px;

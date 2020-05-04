@@ -3,9 +3,11 @@
 @font-face {
   font-family: "COCOGOOSE";
   src: url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
-    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
+      format("svg"),
     url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
+      format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -190,7 +192,7 @@ main {
 
     .section {
       background-color: rgba(256, 256, 256, 0.2);
-
+      width: 100%;
       @media (min-width: 768px) {
         margin: 0;
         padding: 0;
@@ -219,7 +221,8 @@ main {
       p {
         color: $third-color;
         font-size: min(1.4em, 2.7vw);
-      }
+        letter-spacing: -0.1vw;
+        
     }
 
     button {
@@ -303,7 +306,7 @@ main {
           display: flex;
           flex-direction: column;
 
-          >* {
+          > * {
             margin-bottom: 0;
           }
 
@@ -378,4 +381,5 @@ main {
       width: 60px;
     }
   }
+}
 }
