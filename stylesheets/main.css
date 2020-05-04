@@ -94,8 +94,30 @@ main::after {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-main .fa-bars {
+main button {
+  border: 0;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+}
+main button:focus, main button:hover {
+  outline: none;
+}
+main button .fa-bars {
   font-size: 200%;
+  color: transparent;
+  background-image: linear-gradient(to right, lightgray, #272a21);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+main button .fa-bars:focus, main button .fa-bars:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to left, lightgray, #272a21);
 }
 main .main-top {
   color: #878787;
