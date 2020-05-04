@@ -2,13 +2,10 @@
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff")
-      format("woff"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
-      format("svg"),
+  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
-      format("embedded-opentype");
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,8 +13,6 @@
 .second-color {
   color: $second-color;
 }
-
-
 
 body {
   @media (min-width: 768px) {
@@ -66,7 +61,7 @@ body {
     ul {
       display: flex;
       flex-direction: row;
-    flex-wrap: nowrap;
+      flex-wrap: nowrap;
 
       li {
         margin-right: 1vw;
@@ -81,11 +76,10 @@ body {
       margin-right: 0;
     }
   }
-  
 }
 
 .menu-button {
-  z-index:1;
+  z-index: 1;
   text-align: left;
   border: 0;
   padding: 5px;
@@ -115,6 +109,7 @@ body {
     }
   }
 }
+
 main {
   font-family: $font-2;
 
@@ -164,8 +159,7 @@ main {
 
       padding: $width-border;
       background-image: linear-gradient(0deg, $third-color, $third-color),
-        repeating-linear-gradient(
-          -45deg,
+        repeating-linear-gradient(-45deg,
           blue,
           blue 5px,
           white,
@@ -173,11 +167,9 @@ main {
           red,
           red 15px,
           white,
-          white 20px
-        );
-      background-size: calc(100% - #{$width-border} * 2)
-          calc(100% - #{$width-border} * 2),
-        100% 100%;
+          white 20px);
+      background-size: calc(100% - #{$width-border} * 2) calc(100% - #{$width-border} * 2),
+      100% 100%;
       background-position: 50%, 50%;
       background-repeat: no-repeat;
       display: grid;
