@@ -73,6 +73,7 @@ nav {
       margin: 10px;
       padding: 3px 10px;
       margin-right: 0;
+     
     }
   }
 }
@@ -219,6 +220,10 @@ main {
         width: 200px;
         margin: 20px;
         padding: 20px;
+        &:hover {
+          color: darken($second-color, 20%);
+          text-decoration: none;
+        }
       }
     }
   }
