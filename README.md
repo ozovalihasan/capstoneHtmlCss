@@ -5,7 +5,7 @@ This is a Microverse project as capstone. It was developed as a requirement for 
 
 ![screenshot](./images/app_screenshot.svg)
 
-Additional description about the project and its features.
+
 In this Microverse project, I built a AIRSHOW website similar to [ conference website](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) . 
 
 ## Built With
