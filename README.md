@@ -22,7 +22,7 @@ Elements are aligned by using grids and flexboxes. To generate CSS code, a CSS p
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/b84519cd89221400794f5ba4ce5492e3aef404e9/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/1e3825e4acaf27f3f6072f1fb6b0ba751106afdb/index.html)
 
 [Video presentation of this project ](https://www.loom.com/share/db7655b285a4440dac28ca70f3531c07)
 
@@ -51,7 +51,9 @@ To get a local copy up and running follow these simple example steps:
 To make any change,
 
 - Use HTML and SCSS files, not CSS files.
+- Check how to change (SCSS files)[https://sass-lang.com/]
 - Open related file by using text editor. 
+- When it is finished editing, `sass --watch spreadsheets:spreadsheets` in root file. 
 
 
 ## Authors
