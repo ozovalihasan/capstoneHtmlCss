@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 a {
   color: inherit;
 }
+
 a:hover {
   color: #b62212;
   text-decoration: none;
@@ -19,6 +21,7 @@ ul {
 .main-padding {
   padding: 0 40px;
 }
+
 @media (min-width: 768px) {
   .main-padding {
     padding: 0 15%;
@@ -41,9 +44,12 @@ ul {
   position: relative;
   background-color: transparent;
 }
-.menu-button:focus, .menu-button:hover {
+
+.menu-button:focus,
+.menu-button:hover {
   outline: none;
 }
+
 .menu-button .fa-bars {
   font-size: 200%;
   color: transparent;
@@ -52,7 +58,9 @@ ul {
   -moz-background-clip: text;
   background-clip: text;
 }
-.menu-button .fa-bars:focus, .menu-button .fa-bars:hover {
+
+.menu-button .fa-bars:focus,
+.menu-button .fa-bars:hover {
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -64,28 +72,34 @@ ul {
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   height: auto;
 }
+
 .nav-bar .top-nav {
   display: none;
   align-items: center;
   background-color: #272a21;
   color: lightgray;
 }
+
 @media (min-width: 768px) {
   .nav-bar .top-nav {
     display: flex;
     flex-direction: row;
   }
 }
+
 .nav-bar .top-nav i {
   margin: 5px 10px;
 }
+
 .nav-bar .top-nav ul {
   display: flex;
   flex-direction: row;
 }
+
 .nav-bar .top-nav ul li {
   margin: 0 10px;
 }
+
 .nav-bar .bottom-nav {
   align-items: center;
   padding-top: 10px 0;
@@ -98,6 +112,7 @@ ul {
   box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
   margin-left: 0;
 }
+
 .nav-bar .bottom-nav img {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -105,15 +120,18 @@ ul {
   height: 70px;
   width: 70px;
 }
+
 .nav-bar .bottom-nav ul {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 .nav-bar .bottom-nav ul li {
   margin-right: 1vw;
 }
+
 .nav-bar .bottom-nav button {
   color: #ec5242;
   border: 4px solid #ec5242;
@@ -128,9 +146,11 @@ ul {
   background-color: #414246;
   color: lightgray;
 }
+
 .sponsors h2 {
   font-size: 1.375em;
 }
+
 .sponsors h2::after {
   content: "";
   display: block;
@@ -139,12 +159,14 @@ ul {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
+
 .sponsors div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .sponsors div .name-sponsor {
   font-size: 1.625em;
   margin: 0 10px;
@@ -157,6 +179,7 @@ ul {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
 .footer a .footer-logo {
   background-color: lightgray;
   border-radius: 50%;
@@ -170,9 +193,11 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   body {
     width: 75%;
@@ -182,23 +207,28 @@ body {
 main {
   font-family: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 main .map {
   padding-top: 10px;
   margin-right: 10px;
   text-align: right;
 }
+
 main .map .fa-chevron-right {
   color: #ec5242;
 }
+
 main .steps {
   color: #878787;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 main .steps h1,
 main .steps h2 {
   font-size: 1.25em;
 }
+
 main .steps h1::after,
 main .steps h2::after {
   content: "";
@@ -208,6 +238,7 @@ main .steps h2::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
+
 main .steps h3 {
   font-size: 1em;
   border: solid lightgray 1px;
@@ -219,9 +250,11 @@ main .steps h3 {
   list-style-position: inside;
   color: #ec5242;
 }
+
 main .steps h3 span {
   color: #272a21;
 }
+
 main .steps .table-ticket {
   padding: 10px;
   background-image: linear-gradient(0deg, lightgray, lightgray), repeating-linear-gradient(-45deg, blue, blue 5px, white, white 10px, red, red 15px, white, white 20px);
@@ -233,20 +266,25 @@ main .steps .table-ticket {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1px;
 }
+
 main .steps .table-ticket div {
   padding: 10px 0;
   background-color: #fff;
 }
+
 main .steps .table-ticket .two-column {
   grid-column-end: span 2;
 }
+
 main .steps.step-1 {
   background-color: #f9f9f9;
 }
+
 main .steps.step-2 {
   position: relative;
   padding-top: 0;
 }
+
 main .steps.step-2 .down-arrow {
   background-color: #ec5242;
   color: #fff;
@@ -260,27 +298,34 @@ main .steps.step-2 .down-arrow {
   -moz-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
+
 main .steps.step-2 .down-arrow i {
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
+
 main .steps.step-2 .name-menu {
   font-size: 1.25em;
   margin-top: 20px;
   padding: 10px;
   background-color: #ededed;
 }
-main .steps.step-2 .first-menu, main .steps.step-2 .second-menu {
+
+main .steps.step-2 .first-menu,
+main .steps.step-2 .second-menu {
   justify-content: space-between;
   font-size: 1em;
   padding: 1vw;
   width: 100%;
   border: 1px solid lightgray;
 }
-main .steps.step-2 .first-menu label, main .steps.step-2 .second-menu label {
+
+main .steps.step-2 .first-menu label,
+main .steps.step-2 .second-menu label {
   margin: 0 10px;
 }
+
 main .steps.step-2 button {
   background-color: #ec5242;
   border: none;
@@ -288,14 +333,13 @@ main .steps.step-2 button {
   margin: 20px;
   padding: 20px;
 }
+
 main .steps.step-2 button:hover {
   color: #b62212;
   text-decoration: none;
 }
 
-.footer {
+footer {
   background-color: #272a21;
   color: lightgray;
 }
-
-/*# sourceMappingURL=ticket.css.map */

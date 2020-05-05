@@ -1,32 +1,12 @@
 $first-color: rgb(39, 42, 33);
 $second-color: rgb(236, 82, 66);
 $third-color: rgb(211, 211, 211);
-$font-1: "Lato",
-apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
-$font-2: "COCOGOOSE",
-apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
+$font-1: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-2: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 @mixin fz($size) {
   font-size: ($size/16px) * 1em;
@@ -126,15 +106,11 @@ ul {
   }
 }
 
-
-
-
 .nav-bar {
   font-family: $font-1;
   height: auto;
 
   .top-nav {
-
     display: none;
 
     @media (min-width: 768px) {
@@ -201,7 +177,6 @@ ul {
     }
   }
 }
-
 
 .sponsors {
   padding-top: 20px;

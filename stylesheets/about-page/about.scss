@@ -2,10 +2,13 @@
 
 @font-face {
   font-family: "COCOGOOSE";
-  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"),
+  src: url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff")
+      format("woff"),
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
+      format("svg"),
     url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
-    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+    url("../../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
+      format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,10 +20,6 @@ body {
 
   width: 100%;
 }
-
-
-
-
 
 main {
   font-family: $font-2;
@@ -146,9 +145,11 @@ main {
 
       .first-image {
         height: 300px;
-        background-image: linear-gradient(to bottom,
+        background-image: linear-gradient(
+            to bottom,
             rgba(255, 0, 0, 0.2),
-            rgba(255, 0, 0, 0.2)),
+            rgba(255, 0, 0, 0.2)
+          ),
           url("../../images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
         background-size: cover, cover;
         width: 100%;
@@ -161,20 +162,18 @@ main {
       .second-image {
         @extend .first-image;
 
-        background-image: linear-gradient(to bottom,
+        background-image: linear-gradient(
+            to bottom,
             rgba(255, 0, 0, 0.2),
-            rgba(255, 0, 0, 0.2)),
+            rgba(255, 0, 0, 0.2)
+          ),
           url("../../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
       }
     }
   }
-
-
 }
 
-.footer {
+footer {
   background-color: $first-color;
   color: $third-color;
-
-
 }

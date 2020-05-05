@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 a {
   color: inherit;
 }
+
 a:hover {
   color: #b62212;
   text-decoration: none;
@@ -19,6 +21,7 @@ ul {
 .main-padding {
   padding: 0 40px;
 }
+
 @media (min-width: 768px) {
   .main-padding {
     padding: 0 15%;
@@ -41,9 +44,12 @@ ul {
   position: relative;
   background-color: transparent;
 }
-.menu-button:focus, .menu-button:hover {
+
+.menu-button:focus,
+.menu-button:hover {
   outline: none;
 }
+
 .menu-button .fa-bars {
   font-size: 200%;
   color: transparent;
@@ -52,7 +58,9 @@ ul {
   -moz-background-clip: text;
   background-clip: text;
 }
-.menu-button .fa-bars:focus, .menu-button .fa-bars:hover {
+
+.menu-button .fa-bars:focus,
+.menu-button .fa-bars:hover {
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -64,28 +72,34 @@ ul {
   font-family: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   height: auto;
 }
+
 .nav-bar .top-nav {
   display: none;
   align-items: center;
   background-color: #272a21;
   color: lightgray;
 }
+
 @media (min-width: 768px) {
   .nav-bar .top-nav {
     display: flex;
     flex-direction: row;
   }
 }
+
 .nav-bar .top-nav i {
   margin: 5px 10px;
 }
+
 .nav-bar .top-nav ul {
   display: flex;
   flex-direction: row;
 }
+
 .nav-bar .top-nav ul li {
   margin: 0 10px;
 }
+
 .nav-bar .bottom-nav {
   align-items: center;
   padding-top: 10px 0;
@@ -98,6 +112,7 @@ ul {
   box-shadow: 0 5px 16px -4px rgba(0, 0, 0, 0.36);
   margin-left: 0;
 }
+
 .nav-bar .bottom-nav img {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -105,15 +120,18 @@ ul {
   height: 70px;
   width: 70px;
 }
+
 .nav-bar .bottom-nav ul {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 .nav-bar .bottom-nav ul li {
   margin-right: 1vw;
 }
+
 .nav-bar .bottom-nav button {
   color: #ec5242;
   border: 4px solid #ec5242;
@@ -128,9 +146,11 @@ ul {
   background-color: #414246;
   color: lightgray;
 }
+
 .sponsors h2 {
   font-size: 1.375em;
 }
+
 .sponsors h2::after {
   content: "";
   display: block;
@@ -139,12 +159,14 @@ ul {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
+
 .sponsors div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .sponsors div .name-sponsor {
   font-size: 1.625em;
   margin: 0 10px;
@@ -157,6 +179,7 @@ ul {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
 .footer a .footer-logo {
   background-color: lightgray;
   border-radius: 50%;
@@ -170,9 +193,11 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   body {
     width: 75%;
@@ -182,6 +207,7 @@ body {
 main {
   font-family: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 main::after {
   content: "";
   opacity: 1;
@@ -196,22 +222,27 @@ main::after {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 main .map {
   padding-top: 10px;
   margin-right: 10px;
   text-align: right;
 }
+
 main .map .fa-chevron-right {
   color: #ec5242;
 }
+
 main .main-top {
   color: #878787;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 main .main-top h1 {
   color: #ec5242;
 }
+
 main .main-top h2 {
   color: #ec5242;
   font-size: 3.75em;
@@ -219,12 +250,14 @@ main .main-top h2 {
   text-transform: uppercase;
   width: auto;
 }
+
 main .main-top h3 {
   background-color: #fff;
   border: 3px solid lightgray;
   line-height: 2;
   font-size: 1em;
 }
+
 @media (min-width: 768px) {
   main .main-top h3 {
     padding: 0 100px;
@@ -232,28 +265,34 @@ main .main-top h3 {
     margin: 0 0;
   }
 }
+
 main .main-top h4 {
   width: auto;
   font-weight: bold;
   font-size: 1em;
 }
+
 main .main-top h5 {
   text-decoration: underline;
   color: #272a21;
 }
+
 main .main-middle {
   background-color: #fff;
   color: lightgray;
 }
+
 main .main-middle .border-top-bold {
   border-top: lightgray 2px solid;
   border-bottom: lightgray 2px solid;
   padding-bottom: 20px;
 }
+
 main .main-middle section .title-main-middle {
   font-weight: 600;
   color: #272a21;
 }
+
 main .main-middle section .title-main-middle::after {
   content: "";
   display: block;
@@ -262,21 +301,25 @@ main .main-middle section .title-main-middle::after {
   background-color: #ec5242;
   border: solid 1px #ec5242;
 }
+
 main .main-middle section .logo-middle {
   width: 75vw;
 }
+
 main .main-middle section div {
   color: #878787;
   width: auto;
   margin: auto 0;
   margin-bottom: 10px;
 }
+
 @media (min-width: 768px) {
   main .main-middle section div {
     width: 100%;
     margin: 10px 0;
   }
 }
+
 main .main-middle section figure {
   font-size: 1.625em;
   color: #fff;
@@ -286,24 +329,27 @@ main .main-middle section figure {
   margin-right: 10px;
   padding: 30px;
 }
-main .main-middle section .first-image, main .main-middle section .second-image {
+
+main .main-middle section .first-image,
+main .main-middle section .second-image {
   height: 300px;
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("../../images/claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg");
   background-size: cover, cover;
   width: 100%;
 }
+
 @media (min-width: 768px) {
-  main .main-middle section .first-image, main .main-middle section .second-image {
+  main .main-middle section .first-image,
+  main .main-middle section .second-image {
     width: 50%;
   }
 }
+
 main .main-middle section .second-image {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url("../../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg");
 }
 
-.footer {
+footer {
   background-color: #272a21;
   color: lightgray;
 }
-
-/*# sourceMappingURL=about.css.map */
