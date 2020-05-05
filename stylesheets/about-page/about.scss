@@ -18,92 +18,9 @@ body {
   width: 100%;
 }
 
-.nav-bar {
-  font-family: $font-1;
-  height: auto;
 
-  .top-nav {
-    background-color: $first-color;
-    color: $third-color;
 
-    i {
-      margin: 5px 10px;
-    }
 
-    ul {
-      li {
-        margin: 0 10px;
-      }
-    }
-  }
-
-  .bottom-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    background-color: #fff;
-
-    @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
-
-    margin-left: 0;
-
-    img {
-      border-radius: 50%;
-      height: 70px;
-      width: 70px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-
-      li {
-        margin-right: 1vw;
-      }
-    }
-
-    button {
-      color: $second-color;
-      border: 4px solid $second-color;
-      margin: 10px;
-      padding: 3px 10px;
-      margin-right: 0;
-    }
-  }
-}
-
-.menu-button {
-  z-index: 1;
-  border: 0;
-  padding: 5px;
-  margin: 0;
-  position: relative;
-  background-color: transparent;
-
-  &:focus,
-  &:hover {
-    outline: none;
-  }
-
-  .fa-bars {
-    font-size: 200%;
-    color: transparent;
-    background-image: linear-gradient(to right, $third-color, $first-color);
-
-    @include bg-clip(text);
-
-    &:focus,
-    &:hover {
-      color: transparent;
-
-      @include bg-clip(text);
-
-      background-image: linear-gradient(to left, $third-color, $first-color);
-    }
-  }
-}
 
 main {
   font-family: $font-2;
@@ -252,44 +169,12 @@ main {
     }
   }
 
-  .sponsors {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #414246;
-    color: $third-color;
 
-    .title-sponsors {
-      @include fz(22px);
-
-      &::after {
-        @include after-line();
-      }
-    }
-
-    a {
-      @include fz(26px);
-
-      margin: 0 10px;
-    }
-  }
 }
 
 .footer {
-  @media (min-width: 768px) {
-    background-color: $first-color;
-    color: $third-color;
-  }
+  background-color: $first-color;
+  color: $third-color;
 
-  font-family: $font-1;
-  padding-bottom: 50px;
-  padding-top: 50px;
 
-  a {
-    .footer-image {
-      background-color: $third-color;
-      border-radius: 50%;
-      height: 60px;
-      width: 60px;
-    }
-  }
 }
