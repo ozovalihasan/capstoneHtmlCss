@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple example steps:
 To make any change,
 
 - Use HTML and SCSS files, not CSS files.
-- Check how to change (SCSS files)[https://sass-lang.com/]
+- Check how to change [SCSS files](https://sass-lang.com/)
 - Open related file by using text editor. 
 - When it is finished editing, `sass --watch spreadsheets:spreadsheets` in root file. 
 
