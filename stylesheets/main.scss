@@ -1,0 +1,260 @@
+@import "import_sass/base";
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"),
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE")
+      format("svg"),
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"),
+    url("../webfonts/webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @media (min-width: 768px) {
+    width: 75%;
+  }
+
+  width: 100%;
+}
+
+main {
+  font-family: $font-2;
+
+  &::after {
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../images/background-1.svg");
+    background-position: center 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .main-top {
+    color: darken($third-color, 30%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h1 {
+      color: $second-color;
+    }
+
+    h2 {
+      background-image: url("../images/alex-jekowsky-ujBbHxsGNH8-unsplash.jpg");
+      background-position: 50%;
+      background-size: 50px;
+      color: transparent;
+
+      @include bg-clip(text);
+      @include fz(60px);
+
+      font-weight: bold;
+      text-transform: uppercase;
+      width: auto;
+
+      @media (min-width: 768px) {
+        width: 75%;
+      }
+    }
+
+    h3 {
+      border: 3px solid #fff;
+      padding: 10px;
+      background-color: lighten($third-color, 15%);
+      width: 75%;
+      line-height: 2;
+
+      @include fz(16px);
+    }
+
+    h4 {
+      white-space: nowrap;
+      width: auto;
+      margin-right: 100%;
+      background-color: red;
+      font-weight: bold;
+
+      @include fz(26px);
+
+      text-transform: uppercase;
+    }
+  }
+
+  .main-middle {
+    background-image: url("../images/two-rect.svg");
+    background-size: 40px;
+    background-repeat: repeat;
+    color: $third-color;
+
+    .title-main-middle {
+      font-weight: 600;
+      color: darken(#fff, 20%);
+
+      &::after {
+        @include after-line();
+      }
+    }
+
+    .section {
+      align-items: center;
+      background-color: rgba(256, 256, 256, 0.2);
+
+      @media (min-width: 768px) {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        width: auto;
+        margin: auto 0;
+
+        @media (min-width: 768px) {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        i {
+          @include fz(30px);
+        }
+      }
+
+      a {
+        font-weight: 600;
+        font-size: min(1.7em, 3.3vw);
+        color: $second-color;
+      }
+
+      p {
+        color: $third-color;
+        font-size: min(1.4em, 2.7vw);
+        letter-spacing: -0.15vw;
+      }
+    }
+
+    .main-middle-button {
+      background-color: $second-color;
+      color: $third-color;
+
+      @include fz(26px);
+
+      &:hover {
+        color: darken($second-color, 20%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .featured-speakers {
+    padding-top: 20px;
+    background-color: #fff;
+    font-family: $font-1;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+
+      &::after {
+        @include after-line();
+      }
+    }
+
+    .featured-container {
+      padding: 20px 0 60px;
+      display: block;
+
+      @media (min-width: 768px) {
+        display: flex;
+      }
+
+      flex-wrap: wrap;
+
+      .one-row {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 10px;
+        display: none;
+
+        @media (min-width: 768px) {
+          display: flex;
+          width: 50%;
+        }
+
+        .images {
+          width: 110px;
+          position: relative;
+
+          .img-decoration {
+            position: absolute;
+            background-image: url("../images/cross.svg");
+            background-size: 10px 10px;
+            background-repeat: repeat;
+            width: 50px;
+            height: 50px;
+
+            @media (min-width: 768px) {
+              background-image: url("../images/cross-gray.svg");
+            }
+          }
+
+          .img-speaker {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+          }
+        }
+
+        .speakers-information {
+          margin-top: 10px;
+          margin-left: 15px;
+          display: flex;
+          flex-direction: column;
+
+          > * {
+            margin-bottom: 0;
+          }
+
+          .speaker-name {
+            @include fz(20px);
+
+            font-weight: 700;
+          }
+
+          .speaker-title {
+            color: $second-color;
+            font-style: italic;
+
+            @include fz(14px);
+
+            &::after {
+              content: "";
+              display: block;
+              width: 20px;
+              background-color: $third-color;
+              border: solid 1px $third-color;
+              margin: 5px 0;
+            }
+          }
+
+          .speaker-explanation {
+            @include fz(12px);
+          }
+        }
+      }
+
+      .display-mobile {
+        display: flex;
+      }
+    }
+  }
+}

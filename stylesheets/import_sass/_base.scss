@@ -1,0 +1,224 @@
+$first-color: rgb(39, 42, 33);
+$second-color: rgb(236, 82, 66);
+$third-color: rgb(211, 211, 211);
+$font-1: "Lato", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-2: "COCOGOOSE", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@mixin fz($size) {
+  font-size: ($size/16px) * 1em;
+}
+
+@mixin suitable($value, $value2) {
+  -webkit-#{$value}: $value2;
+  -moz-#{$value}: $value2;
+  #{$value}: $value2;
+}
+
+@mixin bg-clip($value) {
+  @include suitable(background-clip, $value);
+}
+
+@mixin bs($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin after-line {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  background-color: $second-color;
+  border: solid 1px $second-color;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: darken($second-color, 20%);
+    text-decoration: none;
+  }
+}
+
+.darken-hover:hover {
+  color: darken($second-color, 10%);
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.main-padding {
+  padding: 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 0 15%;
+  }
+}
+
+.second-color {
+  color: $second-color;
+}
+
+.deactive {
+  &:hover {
+    color: darken($third-color, 20%);
+  }
+}
+
+.menu-button {
+  z-index: 1;
+  border: 0;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  .fa-bars {
+    font-size: 200%;
+    color: transparent;
+    background-image: linear-gradient(to right, $third-color, $first-color);
+
+    @include bg-clip(text);
+
+    &:focus,
+    &:hover {
+      color: transparent;
+
+      @include bg-clip(text);
+
+      background-image: linear-gradient(to left, $third-color, $first-color);
+    }
+  }
+}
+
+.nav-bar {
+  font-family: $font-1;
+  height: auto;
+
+  .top-nav {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    align-items: center;
+    background-color: $first-color;
+    color: $third-color;
+
+    i {
+      margin: 5px 10px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .bottom-nav {
+    align-items: center;
+    padding-top: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    background-color: #fff;
+
+    @include bs(0 5px 16px -4px rgba(0, 0, 0, 0.36));
+
+    margin-left: 0;
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+    }
+
+    ul {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      li {
+        margin-right: 1vw;
+      }
+    }
+
+    button {
+      color: $second-color;
+      border: 4px solid $second-color;
+      margin: 10px;
+      padding: 3px 10px;
+      margin-right: 0;
+    }
+  }
+}
+
+.sponsors {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #414246;
+  color: $third-color;
+
+  h2 {
+    @include fz(22px);
+
+    &::after {
+      @include after-line();
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .name-sponsor {
+      @include fz(26px);
+
+      margin: 0 10px;
+    }
+  }
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  font-family: $font-1;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  a {
+    .footer-logo {
+      background-color: $third-color;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
