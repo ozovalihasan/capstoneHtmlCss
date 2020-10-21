@@ -17,7 +17,7 @@ Elements are aligned by using grids and flexboxes. To generate CSS code, a CSS p
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/capstoneHtmlCss/54640e42dd571d0c896a1d2bfce5737d811ad239/index.html)
+[Live Demo Link](airshow.netlify.app)
 
 [Video presentation of this project ](https://www.loom.com/share/db7655b285a4440dac28ca70f3531c07)
 
