@@ -17,7 +17,7 @@ Elements are aligned by using grids and flexboxes. To generate CSS code, a CSS p
 
 ## Live Demo
 
-[Live Demo Link](airshow.netlify.app)
+[Live Demo Link](https://airshow.netlify.app)
 
 [Video presentation of this project ](https://www.loom.com/share/db7655b285a4440dac28ca70f3531c07)
 
