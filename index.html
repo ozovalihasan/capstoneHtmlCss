@@ -1,299 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRSHOW 2020</title>
+    <meta name="description" content="This is the website of AIRSHOW event." />
+    <meta name="keywords" content="CSS, HTML, Responsive web design" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/ozovalihasan/capstoneHtmlCss/main-parts/images/social-image.jpg"
+    />
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="icon" href="images/logo.svg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIRSHOW 2020</title>
-  <link rel="stylesheet" href="stylesheets/reset.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="stylesheets/main.css" />
-  <link rel="icon" href="images/logo.svg" />
+    <script
+      src="https://kit.fontawesome.com/8c7f545978.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://kit.fontawesome.com/8c7f545978.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</head>
-
-<body class="w-100">
-  <nav>
-
-    <div class="nav-bar d-none d-md-block">
-
-      <div id="top-nav" class="top-nav main-padding w-100  m-0 ">
-        <div class="icons ml-auto">
-          <a href="#" class="deactive">
-            <i class="h-2 fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="deactive">
-            <i class="h-2 fab fa-twitter"></i>
-          </a>
+  <body class="w-100">
+    <nav>
+      <div class="nav-bar d-none d-md-block">
+        <div id="top-nav" class="top-nav main-padding w-100 m-0">
+          <div class="icons ml-auto">
+            <a href="#" class="deactive">
+              <i class="h-2 fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="deactive">
+              <i class="h-2 fab fa-twitter"></i>
+            </a>
+          </div>
+          <ul class="ml-2 mr-0 mb-0">
+            <li class="">
+              <a href="#" class="deactive"> Logout </a>
+            </li>
+            <li class="">
+              <a href="#" class="deactive"> Mypage </a>
+            </li>
+            <li class="">
+              <a href="#" class="deactive"> Türkçe </a>
+            </li>
+          </ul>
         </div>
-        <ul class=" ml-2 mr-0 mb-0  ">
-          <li class="">
-            <a href="#" class="deactive">
-              Logout
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="deactive">
-              Mypage
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="deactive">
-              Türkçe
-            </a>
-          </li>
-        </ul>
+        <div id="bottom-nav" class="bottom-nav main-padding w-100">
+          <a href="index.html">
+            <img class="logo" src="images/logo.svg" alt="" />
+          </a>
+          <ul class="ml-auto mb-0">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" class="deactive">Program</a></li>
+            <li><a href="ticket.html">Join</a></li>
+            <li><a href="#" class="deactive">Sponsor</a></li>
+            <li><a href="#" class="deactive">News</a></li>
+          </ul>
+          <button class="bg-transparent">AIRSHOW Campaign</button>
+        </div>
       </div>
-      <div id="bottom-nav" class="bottom-nav main-padding  w-100 ">
-        <a href="index.html">
-          <img class="logo" src="images/logo.svg" alt="" />
-        </a>
-        <ul class=" ml-auto mb-0 ">
-          <li><a href="about.html">About</a></li>
-          <li><a href="#" class="deactive">Program</a></li>
-          <li><a href="ticket.html">Join</a></li>
-          <li><a href="#" class="deactive">Sponsor</a></li>
-          <li><a href="#" class="deactive">News</a></li>
-        </ul>
-        <button class="bg-transparent">
-          AIRSHOW Campaign
+      <button class="menu-button position-fixed d-md-none mt-4 ml-5">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <main class="position-relative">
+      <div class="main-top main-padding">
+        <h1>"Hello! Connecting World"</h1>
+        <h2>AIRSHOW 2020</h2>
+        <h3 class="mr-3 my-5">
+          A joyful celebration believing in the safety and development, creating
+          a positive change with people from over 80 countries is taking place
+          in October, in Turkey.
+        </h3>
+
+        <h4>2020.10.15(THU) ~ 16(FRI)</h4>
+        <h5>@Atatürk Airport and more</h5>
+      </div>
+      <div class="main-middle w-100 pb-2 main-padding">
+        <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
+          Main program
+        </h2>
+
+        <div class="d-md-flex d-block">
+          <div
+            class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-chart-line mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Conference</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Professionals will share the latest developments in the aviation
+              industry
+            </p>
+          </div>
+          <div
+            class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-plane mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto text-center"
+              >Aerobatic Show</a
+            >
+            <p class="p-3 w-100 my-auto text-center">
+              Aerobatic aircraft will show their best shows
+            </p>
+          </div>
+          <div
+            class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100"
+          >
+            <div class="m-3 my-2 d-flex">
+              <i class="fas fa-tools mx-md-auto"></i>
+            </div>
+
+            <a class="m-3 my-auto w-auto mx-md-auto">Workshop</a>
+            <p class="p-3 w-100 my-auto text-center">
+              Professionals and customers will be together by workshops
+            </p>
+          </div>
+        </div>
+        <button
+          onclick="window.location.href='ticket.html'"
+          class="main-middle-button d-flex mx-auto w-auto border-0 px-5 py-4 h-auto my-5"
+        >
+          Join AIRSHOW 2020
         </button>
       </div>
 
-    </div>
-    <button class="menu-button position-fixed d-md-none  mt-4 ml-5">
-      <i class="  fas fa-bars"></i>
-    </button>
-  </nav>
-
-
-
-  <main class="position-relative">
-
-    <div class="main-top main-padding">
-      <h1>
-        "Hello! Connecting World"
-      </h1>
-      <h2>
-        AIRSHOW 2020
-      </h2>
-      <h3 class="mr-3 my-5">
-        A joyful celebration believing in the safety and development, creating
-        a positive change with people from over 80 countries is taking place
-        in October, in Turkey.
-      </h3>
-
-      <h4>
-        2020.10.15(THU) ~ 16(FRI)
-      </h4>
-      <h5>
-        @Atatürk Airport and more
-      </h5>
-    </div>
-    <div class="main-middle w-100 pb-2 main-padding">
-      <h2 class="title-main-middle w-100 py-4 mx-auto text-center">
-        Main program
-      </h2>
-
-      <div class="d-md-flex d-block">
-        <div class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100">
-          <div class="m-3 my-2 d-flex">
-            <i class="fas fa-chart-line mx-md-auto"></i>
+      <div class="featured-speakers main-padding">
+        <h2 class="title-main-middle">Featured Speakers</h2>
+        <div class="featured-container">
+          <div class="one-row display-mobile">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil3.svg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Emelie Robinson</p>
+              <p class="speaker-title">Cu quod wisi vix</p>
+              <p class="speaker-explanation">
+                Esse scribentur efficiantur vis cu. Sea augue tollit no, pro te
+                nostrum intellegebat. Ut quaeque maiestatis deterruisset his,
+                duo prodesset scripserit repudiandae ne.
+              </p>
+            </div>
           </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Conference</a>
-          <p class="p-3 w-100 my-auto text-center">
-            Professionals will share the latest developments in the aviation
-            industry
-          </p>
-        </div>
-        <div class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100">
-          <div class="m-3 my-2 d-flex">
-            <i class="fas fa-plane mx-md-auto"></i>
+          <div class="one-row display-mobile">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil2.jpg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Vasiliy Jimenez</p>
+              <p class="speaker-title">
+                An nam virtute ponderum, eam et soluta
+              </p>
+              <p class="speaker-explanation">
+                Ei bonorum fastidii persecuti per, possit melius tamquam ne ius.
+                Ex his erroribus suscipiantur, mei ad nemore aliquam dissentias,
+                veniam impetus mea et.
+              </p>
+            </div>
           </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto text-center">Aerobatic Show</a>
-          <p class="p-3 w-100 my-auto text-center">
-            Aerobatic aircraft will show their best shows
-          </p>
-        </div>
-        <div class="section d-flex flex-nowrap col-md-4 flex-md-wrap p-3 p-md-0 m-3 m-md-1 w-100">
-          <div class="m-3 my-2 d-flex">
-            <i class="fas fa-tools mx-md-auto"></i>
+          <div class="one-row">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil5.jpg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Mario Porter</p>
+              <p class="speaker-title">Ei dicat nostrud dissentias his</p>
+              <p class="speaker-explanation">
+                Augue persequeris et mei, sit veritus nostrum urbanitas ex. At
+                elit congue posidonium vim.
+              </p>
+            </div>
           </div>
-
-          <a class="m-3 my-auto w-auto mx-md-auto">Workshop</a>
-          <p class="p-3 w-100 my-auto text-center">
-            Professionals and customers will be together by workshops
-          </p>
-        </div>
-      </div>
-      <button onclick="window.location.href='ticket.html'"
-        class="main-middle-button d-flex mx-auto w-auto border-0 px-5 py-4 h-auto my-5">
-        Join AIRSHOW 2020
-      </button>
-    </div>
-
-    <div class="featured-speakers main-padding">
-      <h2 class="title-main-middle">
-        Featured Speakers
-      </h2>
-      <div class="featured-container">
-        <div class="one-row display-mobile">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil3.svg" alt="" />
+          <div class="one-row">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil4.jpg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Mayur Wilkinson</p>
+              <p class="speaker-title">Mutat nihil intellegam ius at.</p>
+              <p class="speaker-explanation">
+                Ei rebum soleat facilisi has. Cu saperet pertinacia dissentiunt
+                his, facilisi percipitur his id.
+              </p>
+            </div>
           </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Emelie Robinson
-            </p>
-            <p class="speaker-title">
-              Cu quod wisi vix
-            </p>
-            <p class="speaker-explanation">
-              Esse scribentur efficiantur vis cu. Sea augue tollit no, pro te nostrum
-              intellegebat. Ut quaeque maiestatis deterruisset his, duo prodesset
-              scripserit repudiandae ne.
-            </p>
+          <div class="one-row">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil6.jpg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Alistair Oliver</p>
+              <p class="speaker-title">Lorem ipsum dolor sit amet</p>
+              <p class="speaker-explanation">
+                Legimus consequuntur vix et. His porro definiebas disputationi
+                an. Assentior temporibus pri an, ipsum ludus adolescens ne his.
+                Cum iuvaret deseruisse ut, omnes legere causae mei in.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="one-row display-mobile">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil2.jpg" alt="" />
-          </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Vasiliy Jimenez
-            </p>
-            <p class="speaker-title">
-              An nam virtute ponderum, eam et soluta
-            </p>
-            <p class="speaker-explanation">
-              Ei bonorum fastidii persecuti per, possit melius tamquam ne ius. Ex his
-              erroribus suscipiantur, mei ad nemore aliquam dissentias, veniam impetus
-              mea et.
-            </p>
-          </div>
-        </div>
-        <div class="one-row">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil5.jpg" alt="" />
-          </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Mario Porter
-            </p>
-            <p class="speaker-title">
-              Ei dicat nostrud dissentias his
-            </p>
-            <p class="speaker-explanation">
-              Augue persequeris et mei, sit veritus nostrum urbanitas ex. At elit
-              congue posidonium vim.
-            </p>
-          </div>
-        </div>
-        <div class="one-row">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil4.jpg" alt="" />
-          </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Mayur Wilkinson
-            </p>
-            <p class="speaker-title">
-              Mutat nihil intellegam ius at.
-            </p>
-            <p class="speaker-explanation">
-              Ei rebum soleat facilisi has. Cu saperet pertinacia dissentiunt his,
-              facilisi percipitur his id.
-            </p>
-          </div>
-        </div>
-        <div class="one-row">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil6.jpg" alt="" />
-          </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Alistair Oliver
-            </p>
-            <p class="speaker-title">
-              Lorem ipsum dolor sit amet
-            </p>
-            <p class="speaker-explanation">
-              Legimus consequuntur vix et. His porro definiebas disputationi an.
-              Assentior temporibus pri an, ipsum ludus adolescens ne his. Cum iuvaret
-              deseruisse ut, omnes legere causae mei in.
-            </p>
-          </div>
-        </div>
-        <div class="one-row">
-          <div class="images">
-            <div class="img-decoration"></div>
-            <img class="img-speaker" src="images/profil1.jpg" alt="" />
-          </div>
-          <div class="speakers-information">
-            <p class="speaker-name">
-              Christophe Phillips
-            </p>
-            <p class="speaker-title">
-              Quaerendum suscipiantur reprehendunt pro ex
-            </p>
-            <p class="speaker-explanation">
-              Altera omittam in pri, pro delectus menandri sapientem at. Mel ut
-              atomorum interpretaris, ferri falli sapientem te vel, vix alii perpetua
-              ei. Ea malis aliquam equidem mea, possit assentior gloriatur mea ei.
-              Minim vitae habemus vix ei.
-            </p>
+          <div class="one-row">
+            <div class="images">
+              <div class="img-decoration"></div>
+              <img class="img-speaker" src="images/profil1.jpg" alt="" />
+            </div>
+            <div class="speakers-information">
+              <p class="speaker-name">Christophe Phillips</p>
+              <p class="speaker-title">
+                Quaerendum suscipiantur reprehendunt pro ex
+              </p>
+              <p class="speaker-explanation">
+                Altera omittam in pri, pro delectus menandri sapientem at. Mel
+                ut atomorum interpretaris, ferri falli sapientem te vel, vix
+                alii perpetua ei. Ea malis aliquam equidem mea, possit assentior
+                gloriatur mea ei. Minim vitae habemus vix ei.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-
-    </div>
-
-
-
-
-
-    <div class="sponsors d-none d-md-flex flex-wrap main-padding">
-      <h2 class="w-100 mx-auto text-center">
-        Partner
-      </h2>
-      <div class="w-100  ">
-        <a href="#" class="name-sponsor">Boeing</a>
-        <a href="#" class="name-sponsor font-weight-light">Airbus</a>
-        <a href="#" class="name-sponsor font-weight-bolder">Douglas</a>
-        <a href="#" class="name-sponsor">Samsung</a>
+      <div class="sponsors d-none d-md-flex flex-wrap main-padding">
+        <h2 class="w-100 mx-auto text-center">Partner</h2>
+        <div class="w-100">
+          <a href="#" class="name-sponsor">Boeing</a>
+          <a href="#" class="name-sponsor font-weight-light">Airbus</a>
+          <a href="#" class="name-sponsor font-weight-bolder">Douglas</a>
+          <a href="#" class="name-sponsor">Samsung</a>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer d-none d-md-flex main-padding w-100 ">
-    <a href="index.html">
-      <img class="footer-logo" src="images/logo2.svg" alt="" />
-    </a>
-    <div class="footer-text ml-3">
-      2020 Hasan Airlines. Some Rights Reserved
-    </div>
-  </footer>
+    </main>
+    <footer class="footer d-none d-md-flex main-padding w-100">
+      <a href="index.html">
+        <img class="footer-logo" src="images/logo2.svg" alt="" />
+      </a>
+      <div class="footer-text ml-3">
+        2020 Hasan Airlines. Some Rights Reserved
+      </div>
+    </footer>
 
-  <script src="scripts/main.js"></script>
-</body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
